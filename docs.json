@@ -9,81 +9,10 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "icon": "book-open-cover",
-          "href": "https://mintlify.com/docs"
-        },
-        {
-          "anchor": "Blog",
-          "icon": "newspaper",
-          "href": "https://mintlify.com/blog"
-        }
-      ]
-    },
-    "tabs": [
+    "languages": [
       {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development",
-              "grossartig"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "English",
+        "language": "en",
+        "default": true,
         "groups": [
           {
             "group": "Articles",
@@ -135,53 +64,53 @@
         ]
       },
       {
-        "tab": "Deutsch",
+        "language": "de",
         "groups": [
           {
             "group": "Artikel",
             "pages": [
-              "de/artikel-erstellen",
-              "de/artikel-bearbeiten",
-              "de/artikel-loeschen-wiederherstellen"
+              "de/creating-articles",
+              "de/editing-articles",
+              "de/deleting-restoring-articles"
             ]
           },
           {
             "group": "Aufträge & Bestand",
             "pages": [
-              "de/auftraege-verwalten",
-              "de/mindestbestand-bestellvorschlag",
-              "de/inventur-durchfuehren"
+              "de/managing-orders",
+              "de/minimum-stock-order-proposals",
+              "de/conducting-stocktaking"
             ]
           },
           {
             "group": "Kunden",
             "pages": [
-              "de/digitale-neukunden-erfassung",
-              "de/neukunden-registrierung-pos"
+              "de/digital-customer-registration",
+              "de/pos-registration-completion"
             ]
           },
           {
             "group": "Verkauf",
             "pages": [
-              "de/rabatte-verwalten",
-              "de/geschenkkarten-verwalten",
-              "de/saison-kollektionen-verwalten"
+              "de/managing-discounts",
+              "de/managing-gift-cards",
+              "de/managing-seasons-collections"
             ]
           },
           {
             "group": "Verwaltung",
             "pages": [
-              "de/lieferanten-marken-konfigurieren",
-              "de/benutzer-verwalten",
-              "de/schichten-einrichten"
+              "de/configuring-suppliers-brands",
+              "de/managing-users",
+              "de/setting-up-shifts"
             ]
           },
           {
             "group": "Einstellungen",
             "pages": [
-              "de/waehrungseinstellungen",
-              "de/beleg-einstellungen",
-              "de/qr-rechnung-aktivieren"
+              "de/currency-settings",
+              "de/receipt-settings",
+              "de/activating-qr-invoices"
             ]
           }
         ]
