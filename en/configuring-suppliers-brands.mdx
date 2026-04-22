@@ -1,0 +1,151 @@
+---
+title: 'Configuring Suppliers and Brands in the Admin App'
+description: 'You configure suppliers and brands, link them together, and set up delivery and payment terms. This configuration is a prerequisite for article creation and ...'
+---
+
+{/* video:injected */}
+<video
+  controls
+  className="w-full aspect-video rounded-xl"
+  src="/videos/en/supplier-brand-config-flow.webm"
+></video>
+
+You configure suppliers and brands, link them together, and set up delivery and payment terms. This configuration is a prerequisite for article creation and order placement.
+
+---
+
+## Prerequisites
+
+- Access to the **Admin App** with **Admin rights** (not possible with a Team Account)
+- Permission for the **Settings** section
+
+---
+
+## Overview
+
+1. **Configure a supplier** — You add a supplier with address and currency.
+2. **Configure a brand** — You add a brand.
+3. **Link brand to supplier** — You define which supplier delivers which brand and configure pricing factors.
+4. **Set delivery and payment terms** — You configure delivery conditions, payment deadlines, and early payment discounts.
+5. **Invite a contact** — You invite a brand representative via email to send orders directly.
+
+---
+
+## 1. Configure a supplier
+
+1. Open the **Admin App**.
+2. Click **Settings** in the sidebar.
+3. Click **My Suppliers**.
+4. Click **Configure Supplier** in the top right.
+
+![Supplier list with configuration button](/images/en/lieferanten-liste.png)
+
+5. Search for the desired supplier.
+6. Select the appropriate **order address** and **currency**.
+7. Click **Save**.
+
+![Configure supplier](/images/en/lieferant-konfigurieren.png)
+
+> **Note:** If the supplier does not appear in the search, they must first be registered with Subsidia. Use the form at [Register new supplier](https://help.subsidia.ch/de/articles/5052712-neuer-lieferant-marke-bei-subsidia-erfassen-lassen).
+
+---
+
+## 2. Configure a brand
+
+1. Click **Settings** in the sidebar.
+2. Click **My Brands**.
+3. Click **Configure Brand**.
+
+![Brand list with configuration button](/images/en/marken-liste.png)
+
+4. Search for the desired brand.
+5. Click **Save**.
+
+---
+
+## 3. Link brand to supplier
+
+The link defines which supplier delivers which brand. When creating articles, the system automatically selects the matching supplier when you choose the brand.
+
+### Via the supplier view
+
+1. Open **Settings > My Suppliers**.
+2. Click the desired supplier.
+3. Switch to the **Brands** tab.
+4. Click **Add Brand**.
+5. Select the brand and configure the **pricing factors** (revenue factor, minimum factor, maximum deviation).
+6. Click **Save**.
+
+![Supplier-brand linking](/images/en/lieferant-marken-verknuepfung.png)
+
+### Automatic price calculation
+
+When you configure pricing factors, the system automatically calculates the sales price based on the purchase price and the configured factor when creating an article.
+
+---
+
+## 4. Set delivery and payment terms
+
+1. Open **Settings > My Suppliers**.
+2. Click the desired supplier.
+3. On the **Edit** tab, you find the fields for terms:
+
+| Field | Description |
+|-------|-------------|
+| **Delivery terms** | Type of delivery (dropdown). |
+| **Terms of payment in days** | Number of days until payment is due. |
+| **Discount** | Percentage discount for early payment (via **Add discount**). |
+
+4. Click **Save**.
+
+---
+
+## 5. Order-only goods receipt
+
+You can require that goods receipts for a supplier are only possible with an existing order.
+
+1. Open **Settings > My Suppliers**.
+2. Click the desired supplier.
+3. Enable the **Order required for deliveries** checkbox.
+4. Click **Save**.
+
+> **Note:** When this option is active, the POS App only allows adding articles from existing orders to goods receipts.
+
+---
+
+## 6. Invite a contact
+
+To send orders directly from the Admin App to a brand representative, invite the contact.
+
+1. Open **Settings > My Brands**.
+2. Click the desired brand.
+3. Click **Edit**.
+4. Enter the representative's **email address**.
+5. Click **Invite via Email**.
+6. Select the **language** for the invitation email.
+7. Click **Send Invitation**.
+8. Click **Save**.
+
+> **Note:** The representative must accept the invitation before you can send orders to them.
+
+---
+
+## Remove a supplier
+
+1. Open **Settings > My Suppliers**.
+2. Click the desired supplier.
+3. Click **Delete**.
+4. Confirm the removal.
+
+---
+
+## Frequently asked questions
+
+**My supplier is not displayed — what should I do?**
+The supplier must be configured under **Settings > My Suppliers**. Only suppliers configured for your account appear in the filters.
+
+**What does the brand-supplier link do?**
+When you select a brand during article creation, the system automatically fills in the linked supplier. The configured price factor calculates the sales price from the purchase price.
+
+**Can I override the price calculation manually?**
+Yes. When creating or editing an article, you can always adjust the sales price manually.

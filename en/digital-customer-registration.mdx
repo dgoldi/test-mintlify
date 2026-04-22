@@ -1,0 +1,95 @@
+---
+title: 'Setting Up QR Code Customer Registration'
+description: 'Your customers can register independently via an online form. You configure once which data is collected, then share the generated QR code — the system handl...'
+---
+
+{/* video:injected */}
+<video
+  controls
+  className="w-full aspect-video rounded-xl"
+  src="/videos/en/field-config-qr-code.webm"
+></video>
+
+Your customers can register independently via an online form. You configure once which data is collected, then share the generated QR code — the system handles the rest.
+
+---
+
+## Prerequisites
+
+- Access to the **Admin App**
+- Permission for the **Settings** section
+
+---
+
+## Overview
+
+The process in three steps:
+
+1. **Configure the form** — You define which fields the customer fills in.
+2. **Share the QR code** — You print the QR code or share it digitally.
+3. **Customer registers** — The customer scans the QR code, fills in the form, and receives a registration code.
+
+How to process the registration code afterwards in the POS or Office is described in the guide [Completing New Customer Registration at the POS](pos-registration-completion.md).
+
+---
+
+## 1. Configure the form
+
+1. Open the **Admin App**.
+2. Navigate to **Settings > More > Digital Customer-Sign-Up**.
+
+On the left side, you see the field configuration. Each field has three possible states:
+
+| Symbol | Status | Meaning |
+|--------|--------|---------|
+| **!** | Required | The customer must fill in this field. |
+| **Eye** | Visible | The field is displayed but optional. |
+| **Crossed-out eye** | Hidden | The form does not show this field. |
+
+![Field configuration with three states](/images/en/feldkonfiguration.png)
+
+3. Click the corresponding symbol on the desired field to change its status.
+
+By default, only **First Name** and **Last Name** are set as required. All other fields — including gender, company, date of birth, email, phone, website, and all address fields — are hidden. Activate only the fields you need for your customer registration.
+
+### Adding a terms and conditions URL (optional)
+
+In the **Terms and conditions** section, you can enter a URL to your terms and conditions. The registration form displays this to the customer as a link.
+
+> **Note:** The URL must start with `https://` and contain a valid domain name (e.g., `https://www.myshop.ch/terms`).
+
+---
+
+## 2. Share the QR code
+
+On the right side of the configuration page, the system automatically generates a **QR code**. This directs customers to the registration form.
+
+![Generated QR code](/images/en/qr-code.png)
+
+You can use the QR code in the following ways:
+
+- **Display in-store** — Print the QR code and place it at the checkout or in the entrance area.
+- **Share digitally** — Include the QR code in newsletters, on your website, or in social media posts.
+- **Show on customer screen** — Display the QR code on a screen in the store.
+
+> **Important:** The QR code contains the field configuration directly in the URL. When you change the fields, the QR code on the configuration page updates automatically. However, previously printed or shared QR codes retain the old configuration — reprint the QR code after making changes.
+
+---
+
+## 3. Customer registers
+
+Once a customer scans the QR code, the registration form opens in their browser. The form only shows the fields you configured as **Required** or **Visible**.
+
+1. The customer scans the QR code with their smartphone.
+2. The form opens in the browser.
+3. The customer fills in the details and submits the form.
+4. The system creates a **registration code** (barcode) that the customer can present in-store.
+
+How your team processes the registration code in the POS or Office is described in the guide [Completing New Customer Registration at the POS](pos-registration-completion.md).
+
+---
+
+## Frequently asked questions
+
+**Can I change the fields afterwards?**
+Yes. Changes to the field configuration take effect immediately for new registrations. Reprint the QR code after making changes, as previously shared codes contain the old configuration.

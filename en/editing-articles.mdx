@@ -1,0 +1,123 @@
+---
+title: 'Editing Existing Articles in the Admin App'
+description: 'You edit prices, upload images, and adjust article properties — individually or for multiple variants at once.'
+---
+
+{/* video:injected */}
+<video
+  controls
+  className="w-full aspect-video rounded-xl"
+  src="/videos/en/article-editing-flow.webm"
+></video>
+
+You edit prices, upload images, and adjust article properties — individually or for multiple variants at once.
+
+---
+
+## Prerequisites
+
+- Access to the **Admin App**
+- Permission for the **Articles** section
+- At least one article with variants exists in the system
+
+---
+
+## Overview
+
+Three common editing tasks:
+
+1. **Change prices** — You adjust purchase price, sales price, or original price.
+2. **Upload images** — You add product photos to the article.
+3. **Set an original price** — You enter a different original price that appears struck through on the label.
+
+---
+
+## 1. Change prices
+
+### Edit a single variant
+
+1. Open the **Admin App**.
+2. Click **Articles** in the sidebar.
+3. Open the desired article.
+4. Switch to the **Articles** tab.
+
+![Variant list with price columns](/images/en/artikel-varianten-liste.png)
+
+5. Click **Edit** at the end of the row.
+
+The system opens an edit window with two sections: **Attributes** and **Prices**.
+
+![Edit modal with price fields](/images/en/artikel-bearbeiten-modal.png)
+
+6. Adjust the desired price fields:
+
+| Field | Description |
+|-------|-------------|
+| **Purchase Price** | Price at which you buy the article from the supplier. |
+| **Sales Price** | Price the customer pays. |
+| **MSRP equals SP** | When enabled, the system uses the sales price as MSRP. |
+| **MSRP** | Manufacturer's suggested retail price. Only visible when the checkbox is disabled. |
+
+7. Click **Save**.
+
+### Edit multiple variants at once
+
+1. Enable the **checkboxes** next to the desired variants.
+2. Click **Edit** in the action bar above the list.
+3. Adjust the prices. Changes apply to all selected variants.
+4. Click **Save**.
+
+> **Note:** Bulk editing only supports price changes. For attribute changes (color, material, GTIN), edit each variant individually.
+
+---
+
+## 2. Upload images
+
+1. Open the desired article.
+2. Switch to the **Overview** tab.
+3. Open the **Images** section.
+
+![Overview tab with images section](/images/en/artikel-bilder-upload.png)
+
+4. Drag an image into the upload area or click to select a file.
+5. The system uploads the image and displays it in the overview.
+
+> **Note:** You can upload multiple images at once. Use the **Sort** button to change the image order.
+
+---
+
+## 3. Set an original price
+
+When the sales price differs from an original price (e.g., for promotions), the original price appears struck through on the label.
+
+### Single variant
+
+1. Open the article and switch to the **Articles** tab.
+2. Click **Edit** at the end of the row.
+3. Disable the **SP equals Original Price** checkbox.
+4. Enter the **Sales Price** (price the customer pays).
+5. Enter the **Original Price** (displayed struck through on the label).
+6. Click **Save**.
+
+The system calculates the **discount** automatically as a percentage.
+
+### Multiple variants at once
+
+1. Enable the checkboxes next to the desired variants.
+2. Click **Edit**.
+3. Disable the **SP equals Original Price** checkbox.
+4. Enter the prices.
+5. Click **Save**.
+
+---
+
+## Frequently asked questions
+
+**Can I change the price for all variants at once?**
+Yes. Enable the checkboxes next to the desired variants and click **Edit**. The price change applies to all selected variants.
+
+**Where do I upload images?**
+Open the article and switch to the **Overview** tab. In the **Images** section, you can upload images via drag-and-drop or the upload dialog.
+
+**What is the difference between sales price and original price?**
+The **sales price** is the current price the customer pays. The **original price** appears struck through on the label and shows the previous or regular price.

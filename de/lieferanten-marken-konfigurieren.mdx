@@ -1,0 +1,151 @@
+---
+title: 'Lieferanten und Marken in der Admin-App konfigurieren'
+description: 'Sie konfigurieren Lieferanten und Marken, verknüpfen sie miteinander und hinterlegen Liefer- und Zahlungskonditionen. Diese Konfiguration ist Voraussetzung f...'
+---
+
+{/* video:injected */}
+<video
+  controls
+  className="w-full aspect-video rounded-xl"
+  src="/videos/de/supplier-brand-config-flow.webm"
+></video>
+
+Sie konfigurieren Lieferanten und Marken, verknüpfen sie miteinander und hinterlegen Liefer- und Zahlungskonditionen. Diese Konfiguration ist Voraussetzung für die Artikelerfassung und Auftragsstellung.
+
+---
+
+## Voraussetzungen
+
+- Zugang zur **Admin-App** mit **Admin-Rechten** (nicht mit Team-Account möglich)
+- Berechtigung für den Bereich **Einstellungen**
+
+---
+
+## Übersicht
+
+1. **Lieferant konfigurieren** — Sie fügen einen Lieferanten mit Adresse und Währung hinzu.
+2. **Marke konfigurieren** — Sie fügen eine Marke hinzu.
+3. **Marke mit Lieferant verknüpfen** — Sie legen fest, welcher Lieferant welche Marke liefert, und hinterlegen Preisberechnungsfaktoren.
+4. **Liefer- und Zahlungskonditionen erfassen** — Sie hinterlegen Lieferbedingungen, Zahlungsfristen und Skonto.
+5. **Kontakt einladen** — Sie laden einen Markenvertreter per E-Mail ein, um Aufträge direkt zu versenden.
+
+---
+
+## 1. Lieferant konfigurieren
+
+1. Öffnen Sie die **Admin-App**.
+2. Klicken Sie in der Seitenleiste auf **Einstellungen**.
+3. Klicken Sie auf **Meine Lieferanten**.
+4. Klicken Sie oben rechts auf **Lieferant konfigurieren**.
+
+![Lieferantenliste mit Konfigurationsschaltfläche](/images/de/lieferanten-liste.png)
+
+5. Suchen Sie den gewünschten Lieferanten.
+6. Wählen Sie die passende **Bestelladresse** und **Währung** aus.
+7. Klicken Sie auf **Speichern**.
+
+![Lieferant konfigurieren](/images/de/lieferant-konfigurieren.png)
+
+> **Hinweis:** Falls der Lieferant nicht in der Suche erscheint, muss er zuerst bei Subsidia erfasst werden. Nutzen Sie dafür das Formular unter [Neuen Lieferant erfassen lassen](https://help.subsidia.ch/de/articles/5052712-neuer-lieferant-marke-bei-subsidia-erfassen-lassen).
+
+---
+
+## 2. Marke konfigurieren
+
+1. Klicken Sie in der Seitenleiste auf **Einstellungen**.
+2. Klicken Sie auf **Meine Marken**.
+3. Klicken Sie auf **Marke konfigurieren**.
+
+![Markenliste mit Konfigurationsschaltfläche](/images/de/marken-liste.png)
+
+4. Suchen Sie die gewünschte Marke.
+5. Klicken Sie auf **Speichern**.
+
+---
+
+## 3. Marke mit Lieferant verknüpfen
+
+Die Verknüpfung legt fest, welcher Lieferant welche Marke liefert. Bei der Artikelerfassung wählt das System automatisch den passenden Lieferanten, wenn Sie die Marke auswählen.
+
+### Über die Lieferantenansicht
+
+1. Öffnen Sie **Einstellungen > Meine Lieferanten**.
+2. Klicken Sie auf den gewünschten Lieferanten.
+3. Wechseln Sie zum Tab **Marken**.
+4. Klicken Sie auf **Marke hinzufügen**.
+5. Wählen Sie die Marke und hinterlegen Sie die **Preisberechnungsfaktoren** (Gewinn-Faktor, minimaler Faktor, maximale Abweichung).
+6. Klicken Sie auf **Speichern**.
+
+![Lieferant-Marken-Verknüpfung](/images/de/lieferant-marken-verknuepfung.png)
+
+### Automatische Preisberechnung
+
+Wenn Sie die Preisberechnungsfaktoren hinterlegen, berechnet das System beim Erfassen eines Artikels automatisch den Verkaufspreis basierend auf dem Einkaufspreis und dem konfigurierten Faktor.
+
+---
+
+## 4. Liefer- und Zahlungskonditionen erfassen
+
+1. Öffnen Sie **Einstellungen > Meine Lieferanten**.
+2. Klicken Sie auf den gewünschten Lieferanten.
+3. Auf dem Tab **Bearbeiten** finden Sie die Felder für Konditionen:
+
+| Feld | Beschreibung |
+|------|--------------|
+| **Lieferbedingung** | Art der Lieferung (Dropdown). |
+| **Zahlungsfrist in Tagen** | Anzahl Tage bis zur Zahlung. |
+| **Skonto** | Prozentualer Rabatt bei frühzeitiger Zahlung (über **Skonto hinzufügen**). |
+
+4. Klicken Sie auf **Speichern**.
+
+---
+
+## 5. Auftragsregelung für Wareneingang
+
+Sie können festlegen, dass Wareneingänge für einen Lieferanten nur mit bestehendem Auftrag möglich sind.
+
+1. Öffnen Sie **Einstellungen > Meine Lieferanten**.
+2. Klicken Sie auf den gewünschten Lieferanten.
+3. Aktivieren Sie die Checkbox **Wareneingang nur mit Auftrag**.
+4. Klicken Sie auf **Speichern**.
+
+> **Hinweis:** Wenn diese Option aktiv ist, können in der POS-App nur Artikel aus bestehenden Aufträgen zum Wareneingang hinzugefügt werden.
+
+---
+
+## 6. Kontakt einladen
+
+Um Aufträge direkt aus der Admin-App an einen Markenvertreter zu versenden, laden Sie den Kontakt ein.
+
+1. Öffnen Sie **Einstellungen > Meine Marken**.
+2. Klicken Sie auf die gewünschte Marke.
+3. Klicken Sie auf **Bearbeiten**.
+4. Geben Sie die **E-Mail-Adresse** des Vertreters ein.
+5. Klicken Sie auf **Einladen via E-Mail**.
+6. Wählen Sie die **Sprache** der Einladungs-E-Mail.
+7. Klicken Sie auf **Einladung senden**.
+8. Klicken Sie auf **Speichern**.
+
+> **Hinweis:** Der Vertreter muss die Einladung akzeptieren, bevor Sie Aufträge an ihn versenden können.
+
+---
+
+## Lieferant entfernen
+
+1. Öffnen Sie **Einstellungen > Meine Lieferanten**.
+2. Klicken Sie auf den gewünschten Lieferanten.
+3. Klicken Sie auf **Löschen**.
+4. Bestätigen Sie die Entfernung.
+
+---
+
+## Häufige Fragen
+
+**Mein Lieferant wird nicht angezeigt — was tun?**
+Der Lieferant muss unter **Einstellungen > Meine Lieferanten** konfiguriert werden. In den Filtern erscheinen nur Lieferanten, die für Ihr Konto konfiguriert sind.
+
+**Was bewirkt die Marken-Lieferanten-Verknüpfung?**
+Wenn Sie bei der Artikelerfassung eine Marke auswählen, ergänzt das System automatisch den verknüpften Lieferanten. Der konfigurierte Preisfaktor berechnet den Verkaufspreis aus dem Einkaufspreis.
+
+**Kann ich die Preisberechnung manuell überschreiben?**
+Ja. Beim Erfassen oder Bearbeiten eines Artikels können Sie den Verkaufspreis jederzeit manuell anpassen.

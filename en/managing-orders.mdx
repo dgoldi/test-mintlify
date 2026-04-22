@@ -1,0 +1,202 @@
+---
+title: 'Managing Orders in the Admin App'
+description: 'You create orders for suppliers, add articles, and manage the order status — from creation through to sending the order to a brand representative.'
+---
+
+{/* video:injected */}
+<video
+  controls
+  className="w-full aspect-video rounded-xl"
+  src="/videos/en/order-management-flow.webm"
+></video>
+
+You create orders for suppliers, add articles, and manage the order status — from creation through to sending the order to a brand representative.
+
+---
+
+## Prerequisites
+
+- Access to the **Admin App**
+- Permission for the **Orders** section
+- At least one **Supplier** configured under **Settings > My Suppliers**
+- At least one **Store** set up in the system
+
+---
+
+## Overview
+
+The process in five steps:
+
+1. **Create an order** — You create a new order with supplier, store, and delivery dates.
+2. **Add articles to the order** — You select existing articles and enter order quantities.
+3. **Create a new article from the order** — You create an article that does not yet exist directly from the order (optional).
+4. **Change the order status** — You set the order to **Confirmed**, **Ordered**, or back to **Draft**.
+5. **Send the order to a contact** — You send the order via email to a brand representative (optional).
+
+---
+
+## 1. Create an order
+
+1. Open the **Admin App**.
+2. Click **Orders** in the sidebar.
+3. Click **Create Order** in the top right.
+
+The system displays the order form.
+
+![Orders list with Create Order button](/images/en/auftraege-liste.png)
+
+Fill in the following fields:
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| **Supplier** | Yes | Search for a supplier or brand. The system suggests configured suppliers. |
+| **Sender Address** | Yes | The system automatically fills in the supplier's order address. |
+| **Store** | Yes | The store where the order will be delivered. |
+| **Recipient Address** | Yes | The system automatically fills in the store address. |
+| **Invoice Address** | Yes | The system automatically fills in the store address. |
+| **Order Date** | Yes | Defaults to today's date. |
+| **Order Type** | Yes | Pre-Order, Post-Order, Internal, Customer Order, or Unknown. |
+| **Order Reference** | No | Optional custom reference number. |
+| **Scheduled Delivery** | No | Expected delivery period (from–to). |
+| **Season** | No | The system shows recommendations based on the delivery date. |
+| **Collection** | No | The system shows recommendations based on the supplier. |
+| **Notes** | No | Free text field for additional information. |
+
+![Order form with filled fields](/images/en/auftrag-formular.png)
+
+4. Click **Save**.
+
+The system creates the order with status **Draft** and redirects you to the order overview.
+
+> **Note:** The **Sender Address**, **Recipient Address**, and **Invoice Address** are automatically populated once you select a supplier and store. You can adjust the addresses manually if needed.
+
+---
+
+## 2. Add articles to the order
+
+On the **Items** tab, you add articles to the order and enter quantities per variant.
+
+1. Open the order.
+2. Type the article name or number in the **Add a model** field.
+3. Select the desired article from the suggestion list.
+
+![Order overview with article search](/images/en/auftrag-artikel-hinzufuegen.png)
+
+4. Enter the desired **order quantities** per color and size.
+
+![Order quantities per variant](/images/en/auftrag-mengen.png)
+
+5. Repeat steps 2–4 for additional articles.
+
+> **Note:** The **Add a model** field is only visible when the order status is **Draft**. Enable the **Restrict to supplier** checkbox to show only articles from the order's supplier.
+
+---
+
+## 3. Create a new article from the order
+
+If an article does not yet exist in the system, you can create it directly from the order.
+
+1. Type the name of the new article in the **Add a model** field.
+2. Click **Create article: [article name]**.
+
+The system opens the article form. Supplier, season, collection, and currency are automatically carried over from the order.
+
+![Create article from the order](/images/en/auftrag-artikel-erstellen.png)
+
+3. Fill in the remaining article details (brand, category, prices, variants).
+4. Click **Save**.
+
+The system creates the article and automatically adds it as a position to the order. You return to the order overview where you can enter the order quantities.
+
+> **Note:** For the complete article creation guide, see [Creating Articles in the Admin App](creating-articles.md).
+
+---
+
+## 4. Change the order status
+
+The order status controls which actions are available.
+
+| Status | Meaning |
+|--------|---------|
+| **Draft** | Order is being edited. Articles can be added and removed. |
+| **Ordered** | Order has been placed. PDF download and sending are available. |
+| **Confirmed** | Order is confirmed by the supplier. Open quantities can be cancelled. |
+
+### Change the status
+
+1. Open the order.
+2. Click the current status in the top right (e.g., **Draft**).
+3. Select the desired new status.
+
+![Status change via the dropdown selector](/images/en/auftrag-status-aendern.png)
+
+### Edit a confirmed order
+
+To edit a confirmed or ordered order:
+
+1. Set the status back to **Draft**.
+2. Edit the order as needed.
+3. Set the status back to **Ordered** or **Confirmed**.
+
+> **Note:** Orders can be switched between **Draft**, **Ordered**, and **Confirmed** at any time.
+
+---
+
+## 5. Send the order to a contact
+
+You can send the order directly from the Admin App via email to a brand representative.
+
+### Prerequisite
+
+The representative must have been invited via **Settings > My Brands** and must have accepted the invitation.
+
+### Send the order
+
+1. Open the order and set the status to **Ordered**.
+2. Click **Send Order** in the top right.
+
+The system opens a window with a summary of the order.
+
+![Send order to contact](/images/en/auftrag-versenden.png)
+
+3. Select the desired **representative** from the list.
+4. Deactivate the **Send Order via EDI** checkbox if the supplier is not EDI-enabled.
+5. Click **Send**.
+
+The system sends the order and sets the status to **Sent**.
+
+> **Note:** If no representative is set up for a brand, you can enter an email address directly in the send window and invite the representative.
+
+---
+
+## Additional options
+
+The **Options** button in the top right provides the following actions:
+
+| Action | Available from status |
+|--------|----------------------|
+| **PDF (Table)** — Download order as PDF | Ordered |
+| **PDF (List)** — Download order as list | Ordered |
+| **Print Summary** — Print order overview | All |
+| **Print Labels** — Print article labels | All |
+| **Copy** — Use order as template for a new order | All |
+| **Assign Season** — Assign season retroactively | All |
+| **Assign Collection** — Assign collection retroactively | All |
+| **Delete** — Delete the order | Draft, Ordered |
+| **Cancel Open Item quantity** — Cancel remaining open quantities | Confirmed |
+
+---
+
+## Frequently asked questions
+
+**Can I still edit a confirmed order?**
+Yes. Set the status back to **Draft**, edit the order, and change the status back afterwards.
+
+**Why can I not add articles?**
+The **Add a model** field is only visible when the status is **Draft**. Set the order back to **Draft**.
+
+**Can I create an article that does not yet exist in the system?**
+Yes. Type the article name in the **Add a model** field and click **Create article**. The system carries over supplier, season, and collection automatically from the order.
+
+**What happens when sending to a contact?**
+The system sends an email with the order details to the selected representative. The order status changes to **Sent**.

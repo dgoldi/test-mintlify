@@ -1,0 +1,190 @@
+---
+title: 'Artikel in der Admin-App erfassen'
+description: 'Sie erfassen einen neuen Artikel mit Farb-, Grössen- und Material-Varianten in einem Schritt. Das System generiert daraus automatisch alle Artikelvarianten.'
+---
+
+{/* video:injected */}
+<video
+  controls
+  className="w-full aspect-video rounded-xl"
+  src="/videos/de/article-creation-flow.webm"
+></video>
+
+Sie erfassen einen neuen Artikel mit Farb-, Grössen- und Material-Varianten in einem Schritt. Das System generiert daraus automatisch alle Artikelvarianten.
+
+---
+
+## Voraussetzungen
+
+- Zugang zur **Admin-App**
+- Berechtigung für den Bereich **Artikel**
+- Mindestens eine **Marke**, ein **Lieferant** und eine **Kategorie** sind im System vorhanden
+
+---
+
+## Übersicht
+
+Der Ablauf in sechs Schritten:
+
+1. **Artikelformular öffnen** — Sie navigieren zum Erfassungsformular.
+2. **Artikelangaben ausfüllen** — Sie erfassen Marke, Lieferant, Artikel-Nummer und Kategorie.
+3. **Saison und Kollektion zuweisen** — Sie ordnen den Artikel optional einer Saison und Kollektion zu.
+4. **Preise festlegen** — Sie definieren Einkaufspreis, Verkaufspreis und UVP.
+5. **Varianten definieren** — Sie legen Farben, Grössen und Materialien fest.
+6. **Artikel speichern** — Das System erstellt den Artikel mit allen Varianten.
+
+Für Artikel ohne Varianten steht ein vereinfachtes Formular zur Verfügung — siehe Abschnitt [Einzel-Artikel ohne Varianten erfassen](#einzel-artikel-ohne-varianten-erfassen).
+
+---
+
+## 1. Artikelformular öffnen
+
+1. Öffnen Sie die **Admin-App**.
+2. Klicken Sie in der Seitenleiste auf **Artikel**.
+3. Klicken Sie oben rechts auf **Artikel erfassen**.
+
+Das System zeigt das Erfassungsformular mit dem Titel **Artikel — erfassen**.
+
+![Artikelliste mit Schaltfläche Artikel erfassen](/images/de/artikel-liste.png)
+
+> **Hinweis:** Falls Sie Daten aus der letzten Erfassung übernehmen möchten, klicken Sie auf **Letzte Eingabe vorplatzieren**. Das System füllt alle Felder ausser der **Artikel-Nummer** mit den zuletzt eingegebenen Werten vor. Die Schaltfläche erscheint nur, wenn Sie zuvor bereits einen Artikel erfasst haben.
+
+---
+
+## 2. Artikelangaben ausfüllen
+
+Das Formular ist in zwei Spalten aufgeteilt: Links erfassen Sie die Artikelangaben, Saison/Kollektion und Preise. Rechts definieren Sie die Varianten (Farben, Grössen, Material).
+
+![Übersicht des Erfassungsformulars](/images/de/artikel-formular.png)
+
+Füllen Sie im Abschnitt **Artikelangaben** die folgenden Felder aus:
+
+| Feld | Pflicht | Beschreibung |
+|------|---------|--------------|
+| **Marke** | Ja | Marke des Artikels. Bei Auswahl eines Lieferanten schränkt das System die Markenauswahl auf dessen Marken ein. |
+| **Lieferant** | Ja | Lieferant des Artikels. Bei Auswahl einer Marke schränkt das System die Lieferantenauswahl entsprechend ein. |
+| **Artikel-Nummer** | Ja | Bezeichnung oder Nummer des Artikels. |
+| **Artikelbeschreibung** | Nein | Optionale Beschreibung des Artikels. |
+| **Kategorie** | Ja | Kategorie des Artikels. Das System zeigt Empfehlungen basierend auf Lieferant und Grössensystem. |
+| **Sortimentsgruppe** | Nein | Optionale Zuordnung zu einer Sortimentsgruppe. |
+| **Tags** | Nein | Optionale Tags zur Kennzeichnung. |
+
+![Artikelangaben mit ausgefüllten Feldern](/images/de/artikel-angaben.png)
+
+> **Hinweis:** **Marke** und **Lieferant** filtern sich gegenseitig. Wenn nur ein passender Eintrag vorhanden ist, wählt das System diesen automatisch aus.
+
+---
+
+## 3. Saison und Kollektion zuweisen
+
+Im Abschnitt **Saison & Kollektion** können Sie den Artikel optional einer Saison und Kollektion zuordnen:
+
+1. Wählen Sie bei Bedarf eine **Saison** aus.
+2. Wählen Sie bei Bedarf eine **Kollektion** aus. Das System zeigt Empfehlungen basierend auf dem ausgewählten Lieferanten.
+
+Beide Felder sind optional. Wenn Sie keine Zuordnung benötigen, überspringen Sie diesen Abschnitt.
+
+![Saison und Kollektion zuweisen](/images/de/artikel-saison.png)
+
+---
+
+## 4. Preise festlegen
+
+Füllen Sie im Abschnitt **Preis** die folgenden Felder aus:
+
+| Feld | Pflicht | Beschreibung |
+|------|---------|--------------|
+| **Einkaufspreis** | Ja | Einkaufspreis des Artikels. |
+| **Verkaufspreis (VP)** | Ja | Verkaufspreis für den Endkunden. |
+
+### UVP festlegen
+
+Die Checkbox **UVP entspricht VP** ist standardmässig aktiviert. Das System übernimmt den Verkaufspreis als unverbindliche Preisempfehlung (UVP).
+
+Wenn der UVP vom Verkaufspreis abweicht:
+
+1. Deaktivieren Sie die Checkbox **UVP entspricht VP**.
+2. Geben Sie den gewünschten **UVP** ein.
+
+### Original-Preis festlegen
+
+Falls der Verkaufspreis von einem Original-Preis abweicht (z. B. bei Aktionen):
+
+1. Deaktivieren Sie die Checkbox **VP entspricht Original-Preis**.
+2. Geben Sie den **Original-Preis** ein.
+
+Das System berechnet den **Rabatt** automatisch in Prozent.
+
+![Preise mit Einkaufs- und Verkaufspreis](/images/de/artikel-preise.png)
+
+> **Hinweis:** Bei Auswahl eines Lieferanten übernimmt das System automatisch dessen hinterlegte Währung für den Einkaufspreis.
+
+---
+
+## 5. Varianten definieren
+
+Auf der rechten Seite des Formulars definieren Sie die Varianten des Artikels. Das System erstellt automatisch alle Kombinationen aus den erfassten Farben, Grössen und Materialien.
+
+### Farb-Varianten
+
+Geben Sie im Abschnitt **Farb-Varianten** die verfügbaren Farben ein. Bestätigen Sie jeden Eintrag einzeln. Dieses Feld ist optional — ohne Farbangabe erstellt das System keine Farbvarianten.
+
+### Grössen-Dimension
+
+Wählen Sie im Abschnitt **Grössen-Dimension** ein Grössensystem und die zugehörigen Grössen aus. Das System zeigt Empfehlungen basierend auf dem ausgewählten Lieferanten und der Kategorie.
+
+> **Wichtig:** Die **Grössen-Dimension** ist ein Pflichtfeld. Ohne Grössenangabe kann der Artikel nicht gespeichert werden.
+
+### Material-Varianten
+
+Geben Sie im Abschnitt **Material-Varianten** die Materialzusammensetzung ein (z. B. „80% Baumwolle, 20% Polyester"). Bestätigen Sie jeden Eintrag einzeln. Dieses Feld ist optional.
+
+![Variantenfelder für Farben, Grössen und Material](/images/de/artikel-varianten.png)
+
+---
+
+## 6. Artikel speichern
+
+1. Klicken Sie auf **Speichern**.
+2. Das System erstellt den Artikel mit allen Varianten-Kombinationen und leitet Sie zur Artikelübersicht weiter.
+
+Auf der Artikelübersicht stehen Ihnen folgende Tabs zur Verfügung: **Übersicht**, **Bearbeiten**, **Varianten**, **Bestellungen**, **Offene Positionen**, **Warenflüsse**, **Chargen** und **Erweitert**.
+
+![Artikelübersicht nach erfolgreicher Erstellung](/images/de/artikel-uebersicht.png)
+
+> **Hinweis:** Auf dem Tab **Varianten** können Sie nachträglich weitere Varianten hinzufügen — über die Schaltfläche **Varianten hinzufügen** mit den Optionen **Farbvariante hinzufügen**, **Materialvariante hinzufügen** oder **Grösse hinzufügen**.
+
+---
+
+## Einzel-Artikel ohne Varianten erfassen
+
+Für Artikel ohne Farb-, Grössen- oder Material-Varianten steht ein vereinfachtes Formular zur Verfügung.
+
+1. Öffnen Sie das Artikelformular wie in Schritt 1 beschrieben.
+2. Klicken Sie oben rechts auf **Einzel-Artikel erfassen**.
+3. Füllen Sie die **Artikelangaben** aus (gleiche Felder wie im Standardformular, ohne Saison und Kollektion).
+4. Legen Sie die **Preise** fest (gleiche Felder wie im Standardformular).
+5. Klicken Sie auf **Speichern**.
+
+### Unterschiede zum Standardformular
+
+| Eigenschaft | Standard-Erfassung | Einzel-Artikel |
+|-------------|-------------------|----------------|
+| Farb-Varianten | Ja | Nein |
+| Grössen-Dimension | Ja (Pflicht) | Nein |
+| Material-Varianten | Ja | Nein |
+| Saison & Kollektion | Ja | Nein |
+| Ergebnis | Artikel mit Varianten | Einzelner Artikel ohne Varianten |
+
+---
+
+## Häufige Fragen
+
+**Wie viele Varianten erstellt das System?**
+Das System erstellt eine Variante für jede Kombination aus Farbe, Grösse und Material. Beispiel: 3 Farben, 4 Grössen und 2 Materialien ergeben 24 Varianten.
+
+**Kann ich nachträglich Varianten hinzufügen?**
+Ja. Öffnen Sie den Artikel und wechseln Sie zum Tab **Varianten**. Über **Varianten hinzufügen** können Sie weitere Farben, Grössen oder Materialien ergänzen.
+
+**Kann ich einen Einzel-Artikel nachträglich in einen Varianten-Artikel umwandeln?**
+Ja. Öffnen Sie den Artikel, wechseln Sie zum Tab **Varianten** und fügen Sie dort Farben, Grössen oder Materialien hinzu.

@@ -1,0 +1,99 @@
+---
+title: 'Saisons und Kollektionen in der Admin-App verwalten'
+description: 'Sie konfigurieren Saisons, erstellen Kollektionen und ordnen sie Lieferanten zu. Diese Zuordnungen vereinfachen die Artikelerfassung und die Auswertung in An...'
+---
+
+{/* video:injected */}
+<video
+  controls
+  className="w-full aspect-video rounded-xl"
+  src="/videos/de/seasons-collections-flow.webm"
+></video>
+
+Sie konfigurieren Saisons, erstellen Kollektionen und ordnen sie Lieferanten zu. Diese Zuordnungen vereinfachen die Artikelerfassung und die Auswertung in Analytics.
+
+---
+
+## Voraussetzungen
+
+- Zugang zur **Admin-App** mit **Admin-Rechten**
+- Berechtigung für den Bereich **Einstellungen**
+
+---
+
+## 1. Saisons konfigurieren
+
+Saisons werden automatisch vom System erstellt, basierend auf Ihren Konfigurationseinstellungen.
+
+1. Öffnen Sie die **Admin-App**.
+2. Klicken Sie in der Seitenleiste auf **Einstellungen**.
+3. Klicken Sie auf **Saisons**.
+4. Klicken Sie auf **Saison konfigurieren**.
+
+![Saisonliste mit Konfigurationsschaltfläche](/images/de/saisons-liste.png)
+
+5. Legen Sie fest:
+   - Ab welchem **Jahr** Saisons automatisch erstellt werden sollen
+   - Welcher **Monat** das erste Semester beginnt
+   - **Kurznamen** für beide Semester
+   - Wie lange Saisons in der Auswahl sichtbar bleiben
+6. Klicken Sie auf **Speichern**.
+
+Das System erstellt neue Saisons automatisch und blendet abgelaufene Saisons aus.
+
+> **Hinweis:** Um die Saison von einem Etikett zu entfernen, öffnen Sie die Saison und tragen Sie im Feld **Text Etikette** ein Leerzeichen ein.
+
+---
+
+## 2. Kollektionen erstellen
+
+1. Klicken Sie in der Seitenleiste auf **Einstellungen**.
+2. Klicken Sie auf **Kollektionen**.
+3. Klicken Sie auf **Kollektion erstellen**.
+
+![Kollektionenliste mit Erstellen-Schaltfläche](/images/de/kollektionen-liste.png)
+
+4. Füllen Sie die Felder aus:
+
+| Feld | Beschreibung |
+|------|--------------|
+| **Name** | Name der Kollektion. |
+| **Text Etikette** | Text, der auf dem Etikett angezeigt wird. |
+| **Start Monat** | Beginn des Lieferzeitraums. |
+| **End Monat** | Ende des Lieferzeitraums. |
+
+5. Klicken Sie auf **Speichern**.
+
+---
+
+## 3. Kollektion mit Lieferant verknüpfen
+
+1. Öffnen Sie die gewünschte Kollektion.
+2. Wechseln Sie zum Tab **Lieferanten**.
+3. Fügen Sie die Lieferanten hinzu, die diese Kollektion liefern.
+
+Bei der Artikelerfassung und Auftragsstellung schlägt das System automatisch die passende Kollektion basierend auf dem Lieferanten und dem Lieferzeitraum vor.
+
+---
+
+## Saison-Arten
+
+Das System unterscheidet drei Saison-Typen:
+
+| Typ | Beschreibung | Verwendung |
+|-----|--------------|------------|
+| **Artikel-Saison** | Die Saison, die einem Artikel zugewiesen ist. | Artikelverwaltung. Nicht für Analytics-Filter empfohlen. |
+| **Auftrags-Saison** | Die Saison, die einem Auftrag zugewiesen ist. | Analytics-Auswertung im Bereich Warenfluss. |
+| **Wareneingangs-Saison** | Automatisch zugewiesen basierend auf dem Lieferdatum. | Automatische Zuordnung bei fehlendem Auftrag. |
+
+> **Hinweis:** Für Analytics-Auswertungen verwenden Sie die **Auftrags-Saison** oder **Wareneingangs-Saison**, da die Artikel-Saison unvollständig sein kann.
+
+---
+
+## Häufige Fragen
+
+**Werden Saisons automatisch erstellt?**
+Ja. Das System erstellt Saisons automatisch basierend auf Ihrer Konfiguration.
+
+**Kann ich Kollektionen nachträglich bearbeiten?**
+Ja. Öffnen Sie die Kollektion und passen Sie die Felder an.

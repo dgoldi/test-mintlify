@@ -1,0 +1,50 @@
+---
+title: 'Schweizer QR-Rechnung in der Admin-App aktivieren'
+description: 'Sie richten die Bankverbindung ein und aktivieren die Zahlungsart „Rechnung", damit das System automatisch einen Swiss QR-Code auf jeder Rechnung mit Schweiz...'
+---
+
+{/* video:injected */}
+<video
+  controls
+  className="w-full aspect-video rounded-xl"
+  src="/videos/de/qr-invoice-flow.webm"
+></video>
+
+Sie richten die Bankverbindung ein und aktivieren die Zahlungsart „Rechnung", damit das System automatisch einen Swiss QR-Code auf jeder Rechnung mit Schweizer Adresse erstellt.
+
+---
+
+## Voraussetzungen
+
+- Zugang zur **Admin-App** mit **Admin-Rechten**
+- Eine gültige **Bankverbindung** ist im System vorhanden
+
+---
+
+## QR-Rechnung einrichten
+
+1. Öffnen Sie die **Admin-App**.
+2. Navigieren Sie zu **Bankverbindungen** (`admin.subsidia.ch/bank-details`).
+3. Öffnen Sie die gewünschte Bankverbindung.
+
+![Bankverbindungen](/images/de/bankverbindungen.png)
+
+4. Navigieren Sie zu **Einstellungen > Schichten** und wählen Sie die gewünschte Schicht.
+5. Wechseln Sie zum Tab **Zahlungsmöglichkeiten**.
+6. Klicken Sie auf **Zahlungsart hinzufügen**.
+7. Wählen Sie den Typ **Rechnung**.
+8. Wählen Sie die entsprechende **Bankverbindung** aus.
+9. Geben Sie die **Zahlungsfrist** ein.
+10. Klicken Sie auf **Speichern**.
+
+Das System erstellt ab sofort für jede Rechnung mit einer Schweizer Adresse automatisch einen Swiss QR-Code.
+
+---
+
+## Häufige Fragen
+
+**Wird der QR-Code auf allen Rechnungen angezeigt?**
+Der QR-Code erscheint nur auf Rechnungen mit einer Schweizer Adresse.
+
+**Benötige ich eine spezielle Bankverbindung?**
+Die Bankverbindung muss im System hinterlegt sein. Der QR-Code wird aus den Bankdaten und der Rechnungsinformation generiert.

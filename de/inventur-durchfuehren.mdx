@@ -1,0 +1,162 @@
+---
+title: 'Inventur in der Admin-App durchführen'
+description: 'Sie erstellen eine Inventur, starten die Zählung, prüfen die Differenzen und schliessen die Inventur ab. Das System verbucht die Bestandeskorrekturen automat...'
+---
+
+{/* video:injected */}
+<video
+  controls
+  className="w-full aspect-video rounded-xl"
+  src="/videos/de/stocktaking-flow.webm"
+></video>
+
+Sie erstellen eine Inventur, starten die Zählung, prüfen die Differenzen und schliessen die Inventur ab. Das System verbucht die Bestandeskorrekturen automatisch.
+
+---
+
+## Voraussetzungen
+
+- Zugang zur **Admin-App**
+- Berechtigung für den Bereich **Inventuren**
+- Alle offenen **Wareneingänge** und **Lieferscheine** für die betroffene Filiale sind abgeschlossen oder storniert
+
+---
+
+## Übersicht
+
+Der Ablauf in vier Schritten:
+
+1. **Inventur vorbereiten** — Sie erstellen eine neue Inventur und wählen die Filiale.
+2. **Inventur starten** — Sie starten die Zählung. Teilnehmer können per Link beitreten.
+3. **Differenzen prüfen** — Sie prüfen die Abweichungen zwischen Soll- und Ist-Bestand und passen die Mengen bei Bedarf manuell an.
+4. **Inventur abschliessen** — Sie bestätigen die Inventur. Das System verbucht die Differenzen.
+
+---
+
+## 1. Inventur vorbereiten
+
+Vor der Inventur müssen alle offenen Warenbewegungen abgeschlossen sein:
+
+- Schliessen Sie alle **Wareneingänge** mit dem Status „In Bearbeitung" ab.
+- Stornieren oder schliessen Sie alle vorbereiteten **Lieferscheine** ab.
+
+Anschliessend erstellen Sie die Inventur:
+
+1. Öffnen Sie die **Admin-App**.
+2. Klicken Sie in der Seitenleiste auf **Inventuren**.
+3. Klicken Sie oben rechts auf **Inventur vorbereiten**.
+
+![Inventurenliste mit Schaltfläche Inventur vorbereiten](/images/de/inventuren-liste.png)
+
+4. Wählen Sie die **Filiale** aus.
+5. Die Checkbox **Inventur jetzt durchführen** ist standardmässig aktiviert. Deaktivieren Sie diese, um ein späteres Datum festzulegen.
+6. Klicken Sie auf **Speichern**.
+
+![Inventur-Formular mit Filiale und Startoptionen](/images/de/inventur-formular.png)
+
+Das System erstellt die Inventur und leitet Sie zur Übersicht weiter.
+
+> **Wichtig:** Ab dem Start der Inventur können keine Wareneingänge verbucht werden. Alle während der Inventur verkauften Artikel müssen erfasst werden.
+
+---
+
+## 2. Inventur starten
+
+Falls die Inventur nicht sofort gestartet wurde (Checkbox deaktiviert), starten Sie sie manuell:
+
+1. Öffnen Sie die Inventur.
+2. Wechseln Sie zum Tab **Erweitert**.
+3. Klicken Sie auf **Jetzt starten**.
+
+![Inventur starten auf dem Tab Erweitert](/images/de/inventur-starten.png)
+
+Das System setzt den Status auf **In Bearbeitung**.
+
+### Teilnehmer einladen
+
+Auf dem Tab **Übersicht** finden Sie einen Link, den Sie an die Teilnehmer senden können. Teilnehmer scannen mit der Inventur-App die Artikel und reichen ihre Zählungen ein.
+
+![Inventur-Übersicht mit Statistik und Teilnahme-Link](/images/de/inventur-uebersicht.png)
+
+Die Übersicht zeigt den aktuellen Fortschritt:
+
+| Kennzahl | Beschreibung |
+|----------|--------------|
+| **Gescannt** | Anzahl der bisher gescannten Artikel |
+| **Soll** | Erwarteter Bestand laut System |
+| **Manuell erfasst** | Manuell korrigierte Mengen |
+| **Differenz** | Abweichung zwischen Soll- und Ist-Bestand |
+
+---
+
+## 3. Differenzen prüfen
+
+Sobald die Teilnehmer ihre Zählungen eingereicht haben, prüfen Sie die Abweichungen.
+
+1. Öffnen Sie die Inventur.
+2. Wechseln Sie zum Tab **Differenzen**.
+
+![Differenzen-Tab mit Artikelliste](/images/de/inventur-differenzen.png)
+
+Die Liste zeigt alle Artikel mit den Spalten **Erwartet**, **Aktuell**, **Bewertung**, **Diff. %** und **Diff.**.
+
+### Filtern
+
+Nutzen Sie die Filteroptionen, um gezielt nach Abweichungen zu suchen:
+
+- **Unterbestand** — weniger gezählt als erwartet
+- **Überbestand** — mehr gezählt als erwartet
+- **Übereinstimmung** — Soll- und Ist-Bestand stimmen überein
+
+### Mengen manuell anpassen
+
+1. Klicken Sie auf eine Zeile in der Differenzliste.
+2. Das System zeigt die einzelnen Artikelvarianten (Farbe, Grösse, Material) mit den jeweiligen Mengen.
+3. Passen Sie die **Ist-Menge** an und das System speichert die Änderung automatisch.
+
+![Artikeldetail mit Varianten und Mengenanpassung](/images/de/inventur-artikel-detail.png)
+
+> **Hinweis:** Manuelle Anpassungen sind nur im Status **In Bearbeitung** möglich.
+
+---
+
+## 4. Inventur abschliessen
+
+Nachdem alle Differenzen geprüft und alle Scan-Vorgänge abgeschlossen sind:
+
+1. Wechseln Sie zum Tab **Erweitert**.
+2. Klicken Sie auf **Jetzt abschliessen**.
+
+![Inventur abschliessen auf dem Tab Erweitert](/images/de/inventur-abschliessen.png)
+
+3. Bestätigen Sie im Dialog.
+
+Das System setzt den Status auf **Abgeschlossen** und verbucht die Differenzen. Eine abgeschlossene Inventur lässt keine Änderungen mehr zu.
+
+> **Wichtig:** Die Schaltfläche **Jetzt abschliessen** erscheint erst, wenn alle Scan-Vorgänge der Teilnehmer beendet sind.
+
+---
+
+## Inventur abbrechen oder annulieren
+
+| Aktion | Verfügbar im Status | Auswirkung |
+|--------|---------------------|------------|
+| **Jetzt abbrechen** | Neu, In Bearbeitung | Zählungen werden ignoriert. Keine Differenzen verbucht. |
+| **Jetzt annulieren** | Abgeschlossen | Verbuchte Differenzen werden zurückgesetzt. |
+
+Beide Aktionen finden Sie auf dem Tab **Erweitert**.
+
+> **Wichtig:** Abbrechen und Annulieren können nicht rückgängig gemacht werden.
+
+---
+
+## Häufige Fragen
+
+**Warum erscheint die Schaltfläche „Jetzt abschliessen" nicht?**
+Alle Scan-Vorgänge der Teilnehmer müssen beendet sein. Prüfen Sie auf dem Tab **Teilnehmer**, ob noch offene Scan-Vorgänge vorhanden sind.
+
+**Kann ich Differenzen nach dem Abschluss korrigieren?**
+Nein. Nach dem Abschluss sind keine Änderungen möglich. Sie können die Inventur annulieren und eine neue starten.
+
+**Können während der Inventur Wareneingänge verbucht werden?**
+Nein. Ab dem Start der Inventur sind Wareneingänge gesperrt, bis die Inventur abgeschlossen oder abgebrochen wird.

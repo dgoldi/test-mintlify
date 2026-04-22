@@ -1,0 +1,162 @@
+---
+title: 'Conducting a Stocktaking in the Admin App'
+description: 'You create a stocktaking, start the count, review the differences, and confirm the stocktaking. The system posts the stock corrections automatically.'
+---
+
+{/* video:injected */}
+<video
+  controls
+  className="w-full aspect-video rounded-xl"
+  src="/videos/en/stocktaking-flow.webm"
+></video>
+
+You create a stocktaking, start the count, review the differences, and confirm the stocktaking. The system posts the stock corrections automatically.
+
+---
+
+## Prerequisites
+
+- Access to the **Admin App**
+- Permission for the **Stocktakings** section
+- All open **goods receipts** and **delivery notes** for the affected store are completed or cancelled
+
+---
+
+## Overview
+
+The process in four steps:
+
+1. **Prepare the stocktaking** — You create a new stocktaking and select the store.
+2. **Start the stocktaking** — You start the count. Participants can join via a shared link.
+3. **Review differences** — You check the deviations between expected and actual stock and adjust quantities manually if needed.
+4. **Confirm the stocktaking** — You confirm the stocktaking. The system posts the differences.
+
+---
+
+## 1. Prepare the stocktaking
+
+Before the stocktaking, all open stock movements must be completed:
+
+- Complete all **goods receipts** with the status "In Progress".
+- Cancel or complete all prepared **delivery notes**.
+
+Then create the stocktaking:
+
+1. Open the **Admin App**.
+2. Click **Stocktakings** in the sidebar.
+3. Click **Prepare Stocktaking** in the top right.
+
+![Stocktakings list with Prepare Stocktaking button](/images/en/inventuren-liste.png)
+
+4. Select the **Store**.
+5. The **Start Stocktaking now** checkbox is enabled by default. Disable it to set a later date.
+6. Click **Save**.
+
+![Stocktaking form with store and start options](/images/en/inventur-formular.png)
+
+The system creates the stocktaking and redirects you to the overview.
+
+> **Important:** Once the stocktaking starts, no goods receipts can be processed. All articles sold during the stocktaking must be counted.
+
+---
+
+## 2. Start the stocktaking
+
+If the stocktaking was not started immediately (checkbox disabled), start it manually:
+
+1. Open the stocktaking.
+2. Switch to the **Advanced** tab.
+3. Click **Start now**.
+
+![Start stocktaking on the Advanced tab](/images/en/inventur-starten.png)
+
+The system sets the status to **In Progress**.
+
+### Invite participants
+
+On the **Overview** tab, you find a link that you can send to participants. Participants use the Stocktaking App to scan articles and submit their counts.
+
+![Stocktaking overview with statistics and participation link](/images/en/inventur-uebersicht.png)
+
+The overview shows the current progress:
+
+| Metric | Description |
+|--------|-------------|
+| **Scanned** | Number of articles scanned so far |
+| **Should** | Expected stock according to the system |
+| **Manually recorded** | Manually adjusted quantities |
+| **Difference** | Deviation between expected and actual stock |
+
+---
+
+## 3. Review differences
+
+Once participants have submitted their counts, review the deviations.
+
+1. Open the stocktaking.
+2. Switch to the **Differences** tab.
+
+![Differences tab with article list](/images/en/inventur-differenzen.png)
+
+The list shows all articles with the columns **Expected**, **Actual**, **Rating**, **Diff. %**, and **Diff.**.
+
+### Filter
+
+Use the filter options to search for specific deviations:
+
+- **Understock** — fewer counted than expected
+- **Overstock** — more counted than expected
+- **Equalized** — expected and actual stock match
+
+### Adjust quantities manually
+
+1. Click a row in the differences list.
+2. The system shows the individual article variants (color, size, material) with their quantities.
+3. Adjust the **actual quantity** and the system saves the change automatically.
+
+![Article detail with variants and quantity adjustment](/images/en/inventur-artikel-detail.png)
+
+> **Note:** Manual adjustments are only possible when the status is **In Progress**.
+
+---
+
+## 4. Confirm the stocktaking
+
+After all differences have been reviewed and all scan processes are completed:
+
+1. Switch to the **Advanced** tab.
+2. Click **Confirm now**.
+
+![Confirm stocktaking on the Advanced tab](/images/en/inventur-abschliessen.png)
+
+3. Confirm in the dialog.
+
+The system sets the status to **Confirmed** and posts the differences. A confirmed stocktaking no longer allows changes.
+
+> **Important:** The **Confirm now** button only appears when all participant scan processes are completed.
+
+---
+
+## Cancel or annul a stocktaking
+
+| Action | Available in status | Effect |
+|--------|---------------------|--------|
+| **Cancel now** | New, In Progress | Counts are ignored. No differences posted. |
+| **Annul now** | Confirmed | Posted differences are reverted. |
+
+Both actions are available on the **Advanced** tab.
+
+> **Important:** Cancelling and annulling cannot be undone.
+
+---
+
+## Frequently asked questions
+
+**Why does the "Confirm now" button not appear?**
+All participant scan processes must be completed. Check the **Participants** tab for any open scan processes.
+
+**Can I correct differences after confirmation?**
+No. After confirmation, no changes are possible. You can annul the stocktaking and start a new one.
+
+**Can goods receipts be processed during a stocktaking?**
+No. Goods receipts are blocked from the start of the stocktaking until it is confirmed or cancelled.

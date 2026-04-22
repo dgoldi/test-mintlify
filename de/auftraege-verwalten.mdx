@@ -1,0 +1,202 @@
+---
+title: 'Aufträge in der Admin-App verwalten'
+description: 'Sie erfassen Aufträge an Lieferanten, fügen Artikel hinzu und verwalten den Auftragsstatus — von der Erstellung bis zum Versand an den Vertreter.'
+---
+
+{/* video:injected */}
+<video
+  controls
+  className="w-full aspect-video rounded-xl"
+  src="/videos/de/order-management-flow.webm"
+></video>
+
+Sie erfassen Aufträge an Lieferanten, fügen Artikel hinzu und verwalten den Auftragsstatus — von der Erstellung bis zum Versand an den Vertreter.
+
+---
+
+## Voraussetzungen
+
+- Zugang zur **Admin-App**
+- Berechtigung für den Bereich **Aufträge**
+- Mindestens ein **Lieferant** ist unter **Einstellungen > Meine Lieferanten** konfiguriert
+- Mindestens eine **Filiale** ist im System vorhanden
+
+---
+
+## Übersicht
+
+Der Ablauf in fünf Schritten:
+
+1. **Auftrag erfassen** — Sie erstellen einen neuen Auftrag mit Lieferant, Filiale und Lieferdaten.
+2. **Artikel zum Auftrag hinzufügen** — Sie wählen bestehende Artikel aus und erfassen die Bestellmengen.
+3. **Neuen Artikel aus dem Auftrag erstellen** — Sie legen einen noch nicht vorhandenen Artikel direkt aus dem Auftrag an (optional).
+4. **Auftragsstatus ändern** — Sie setzen den Auftrag auf **Bestätigt**, **Bestellt** oder zurück auf **Entwurf**.
+5. **Bestellung an Kontakt versenden** — Sie versenden den Auftrag per E-Mail an einen Markenvertreter (optional).
+
+---
+
+## 1. Auftrag erfassen
+
+1. Öffnen Sie die **Admin-App**.
+2. Klicken Sie in der Seitenleiste auf **Aufträge**.
+3. Klicken Sie oben rechts auf **Auftrag erfassen**.
+
+Das System zeigt das Erfassungsformular.
+
+![Auftragsliste mit Schaltfläche Auftrag erfassen](/images/de/auftraege-liste.png)
+
+Füllen Sie die folgenden Felder aus:
+
+| Feld | Pflicht | Beschreibung |
+|------|---------|--------------|
+| **Lieferant** | Ja | Suchen Sie nach Lieferant oder Marke. Das System schlägt konfigurierte Lieferanten vor. |
+| **Absender-Adresse** | Ja | Das System übernimmt automatisch die Bestelladresse des Lieferanten. |
+| **Filiale** | Ja | Filiale, in die die Bestellung gesendet wird. |
+| **Empfänger-Adresse** | Ja | Das System übernimmt automatisch die Adresse der Filiale. |
+| **Rechnungs-Adresse** | Ja | Das System übernimmt automatisch die Adresse der Filiale. |
+| **Bestelldatum** | Ja | Standardmässig das heutige Datum. |
+| **Order-Art** | Ja | Vor-Order, Nach-Order, Intern, Kundenbestellung oder Unbekannt. |
+| **Auftragsnummer** | Nein | Optionale eigene Referenznummer. |
+| **Geplanter Liefertermin** | Nein | Erwarteter Lieferzeitraum (von–bis). |
+| **Saison** | Nein | Das System zeigt Empfehlungen basierend auf dem Liefertermin. |
+| **Kollektion** | Nein | Das System zeigt Empfehlungen basierend auf dem Lieferanten. |
+| **Notizen** | Nein | Freitextfeld für zusätzliche Informationen. |
+
+![Auftragsformular mit ausgefüllten Feldern](/images/de/auftrag-formular.png)
+
+4. Klicken Sie auf **Speichern**.
+
+Das System erstellt den Auftrag im Status **Entwurf** und leitet Sie zur Auftragsübersicht weiter.
+
+> **Hinweis:** Die **Absender-Adresse**, **Empfänger-Adresse** und **Rechnungs-Adresse** füllt das System automatisch aus, sobald Sie Lieferant und Filiale gewählt haben. Sie können die Adressen bei Bedarf manuell anpassen.
+
+---
+
+## 2. Artikel zum Auftrag hinzufügen
+
+Auf dem Tab **Bestellmenge** fügen Sie Artikel zum Auftrag hinzu und erfassen die Mengen pro Variante.
+
+1. Öffnen Sie den Auftrag.
+2. Geben Sie im Feld **Artikel hinzufügen** den Artikelnamen oder die Artikelnummer ein.
+3. Wählen Sie den gewünschten Artikel aus der Vorschlagsliste.
+
+![Auftragsübersicht mit Artikelsuche](/images/de/auftrag-artikel-hinzufuegen.png)
+
+4. Tragen Sie die gewünschten **Bestellmengen** pro Farbe und Grösse ein.
+
+![Bestellmengen pro Variante](/images/de/auftrag-mengen.png)
+
+5. Wiederholen Sie die Schritte 2–4 für weitere Artikel.
+
+> **Hinweis:** Das Feld **Artikel hinzufügen** ist nur im Status **Entwurf** sichtbar. Aktivieren Sie die Checkbox **Auf Lieferant einschränken**, um nur Artikel des im Auftrag hinterlegten Lieferanten anzuzeigen.
+
+---
+
+## 3. Neuen Artikel aus dem Auftrag erstellen
+
+Falls ein Artikel noch nicht im System vorhanden ist, erstellen Sie ihn direkt aus dem Auftrag heraus.
+
+1. Geben Sie im Feld **Artikel hinzufügen** den Namen des neuen Artikels ein.
+2. Klicken Sie auf **Artikel erstellen: [Artikelname]**.
+
+Das System öffnet das Artikelformular. Lieferant, Saison, Kollektion und Währung übernimmt das System automatisch aus dem Auftrag.
+
+![Artikel aus dem Auftrag erstellen](/images/de/auftrag-artikel-erstellen.png)
+
+3. Füllen Sie die restlichen Artikelangaben aus (Marke, Kategorie, Preise, Varianten).
+4. Klicken Sie auf **Speichern**.
+
+Das System erstellt den Artikel und fügt ihn automatisch als Position zum Auftrag hinzu. Sie gelangen zurück zur Auftragsübersicht, wo Sie die Bestellmengen erfassen können.
+
+> **Hinweis:** Die vollständige Anleitung zur Artikelerfassung finden Sie im Guide [Artikel in der Admin-App erfassen](artikel-erstellen.md).
+
+---
+
+## 4. Auftragsstatus ändern
+
+Der Auftragsstatus steuert, welche Aktionen verfügbar sind.
+
+| Status | Bedeutung |
+|--------|-----------|
+| **Entwurf** | Auftrag ist in Bearbeitung. Artikel können hinzugefügt und entfernt werden. |
+| **Bestellt** | Auftrag ist bestellt. PDF-Download und Versand sind verfügbar. |
+| **Bestätigt** | Auftrag ist vom Lieferanten bestätigt. Offene Mengen können annulliert werden. |
+
+### Status ändern
+
+1. Öffnen Sie den Auftrag.
+2. Klicken Sie oben rechts auf den aktuellen Status (z. B. **Entwurf**).
+3. Wählen Sie den gewünschten neuen Status aus.
+
+![Statusänderung über die Dropdown-Auswahl](/images/de/auftrag-status-aendern.png)
+
+### Bestätigten Auftrag nachträglich bearbeiten
+
+Um einen bestätigten oder bestellten Auftrag zu bearbeiten:
+
+1. Setzen Sie den Status zurück auf **Entwurf**.
+2. Bearbeiten Sie den Auftrag wie gewünscht.
+3. Setzen Sie den Status anschliessend wieder auf **Bestellt** oder **Bestätigt**.
+
+> **Hinweis:** Aufträge können jederzeit zwischen den Status **Entwurf**, **Bestellt** und **Bestätigt** gewechselt werden.
+
+---
+
+## 5. Bestellung an Kontakt versenden
+
+Sie können den Auftrag direkt aus der Admin-App per E-Mail an einen Markenvertreter versenden.
+
+### Voraussetzung
+
+Der Vertreter muss vorgängig über **Einstellungen > Meine Marken** eingeladen worden sein und die Einladung akzeptiert haben.
+
+### Versand durchführen
+
+1. Öffnen Sie den Auftrag und setzen Sie den Status auf **Bestellt**.
+2. Klicken Sie oben rechts auf **Bestellung Senden**.
+
+Das System öffnet ein Fenster mit einer Zusammenfassung des Auftrags.
+
+![Bestellung an Kontakt versenden](/images/de/auftrag-versenden.png)
+
+3. Wählen Sie den gewünschten **Vertreter** aus der Liste aus.
+4. Deaktivieren Sie die Checkbox **Bestellung via EDI senden**, falls der Lieferant nicht EDI-fähig ist.
+5. Klicken Sie auf **Senden**.
+
+Das System versendet die Bestellung und setzt den Auftragsstatus auf **Gesendet**.
+
+> **Hinweis:** Falls kein Vertreter für eine Marke hinterlegt ist, können Sie direkt im Versandfenster eine E-Mail-Adresse eingeben und den Vertreter einladen.
+
+---
+
+## Weitere Optionen
+
+Über die Schaltfläche **Optionen** oben rechts stehen folgende Aktionen zur Verfügung:
+
+| Aktion | Verfügbar ab Status |
+|--------|---------------------|
+| **PDF (Tabelle)** — Auftrag als PDF herunterladen | Bestellt |
+| **PDF (Liste)** — Auftrag als Liste herunterladen | Bestellt |
+| **Zusammenfassung drucken** — Auftragsübersicht drucken | Alle |
+| **Etiketten drucken** — Artikeletiketten drucken | Alle |
+| **Kopieren** — Auftrag als Vorlage für einen neuen Auftrag verwenden | Alle |
+| **Saison zuweisen** — Saison nachträglich zuweisen | Alle |
+| **Kollektion zuweisen** — Kollektion nachträglich zuweisen | Alle |
+| **Löschen** — Auftrag löschen | Entwurf, Bestellt |
+| **Offene Menge annullieren** — Verbleibende offene Mengen annullieren | Bestätigt |
+
+---
+
+## Häufige Fragen
+
+**Kann ich einen bestätigten Auftrag noch bearbeiten?**
+Ja. Setzen Sie den Status auf **Entwurf** zurück, bearbeiten Sie den Auftrag und ändern Sie den Status danach wieder.
+
+**Warum kann ich keine Artikel hinzufügen?**
+Das Feld **Artikel hinzufügen** ist nur im Status **Entwurf** sichtbar. Setzen Sie den Auftrag auf **Entwurf** zurück.
+
+**Kann ich einen Artikel erstellen, der noch nicht im System existiert?**
+Ja. Geben Sie den Artikelnamen im Feld **Artikel hinzufügen** ein und klicken Sie auf **Artikel erstellen**. Das System übernimmt Lieferant, Saison und Kollektion automatisch aus dem Auftrag.
+
+**Was passiert beim Versand an einen Kontakt?**
+Das System sendet eine E-Mail mit den Auftragsdetails an den gewählten Vertreter. Der Auftragsstatus wechselt auf **Gesendet**.

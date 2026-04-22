@@ -1,0 +1,19 @@
+{
+  "name": "subsidia-docs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "mintlify dev",
+    "build": "mintlify build",
+    "screenshots": "playwright test --config=playwright.config.ts",
+    "screenshots:de": "playwright test --config=playwright.config.ts --project=screenshots-de",
+    "screenshots:en": "playwright test --config=playwright.config.ts --project=screenshots-en"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.47.0",
+    "@types/node": "^20.11.0",
+    "date-fns": "^3.6.0",
+    "mintlify": "^4.0.0",
+    "typescript": "^5.4.0"
+  }
+}

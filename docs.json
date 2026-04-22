@@ -81,6 +81,110 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "English",
+        "groups": [
+          {
+            "group": "Articles",
+            "pages": [
+              "en/creating-articles",
+              "en/editing-articles",
+              "en/deleting-restoring-articles"
+            ]
+          },
+          {
+            "group": "Orders & Stock",
+            "pages": [
+              "en/managing-orders",
+              "en/minimum-stock-order-proposals",
+              "en/conducting-stocktaking"
+            ]
+          },
+          {
+            "group": "Customers",
+            "pages": [
+              "en/digital-customer-registration",
+              "en/pos-registration-completion"
+            ]
+          },
+          {
+            "group": "Commerce",
+            "pages": [
+              "en/managing-discounts",
+              "en/managing-gift-cards",
+              "en/managing-seasons-collections"
+            ]
+          },
+          {
+            "group": "Administration",
+            "pages": [
+              "en/configuring-suppliers-brands",
+              "en/managing-users",
+              "en/setting-up-shifts"
+            ]
+          },
+          {
+            "group": "Settings",
+            "pages": [
+              "en/currency-settings",
+              "en/receipt-settings",
+              "en/activating-qr-invoices"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Deutsch",
+        "groups": [
+          {
+            "group": "Artikel",
+            "pages": [
+              "de/artikel-erstellen",
+              "de/artikel-bearbeiten",
+              "de/artikel-loeschen-wiederherstellen"
+            ]
+          },
+          {
+            "group": "Aufträge & Bestand",
+            "pages": [
+              "de/auftraege-verwalten",
+              "de/mindestbestand-bestellvorschlag",
+              "de/inventur-durchfuehren"
+            ]
+          },
+          {
+            "group": "Kunden",
+            "pages": [
+              "de/digitale-neukunden-erfassung",
+              "de/neukunden-registrierung-pos"
+            ]
+          },
+          {
+            "group": "Verkauf",
+            "pages": [
+              "de/rabatte-verwalten",
+              "de/geschenkkarten-verwalten",
+              "de/saison-kollektionen-verwalten"
+            ]
+          },
+          {
+            "group": "Verwaltung",
+            "pages": [
+              "de/lieferanten-marken-konfigurieren",
+              "de/benutzer-verwalten",
+              "de/schichten-einrichten"
+            ]
+          },
+          {
+            "group": "Einstellungen",
+            "pages": [
+              "de/waehrungseinstellungen",
+              "de/beleg-einstellungen",
+              "de/qr-rechnung-aktivieren"
+            ]
+          }
+        ]
       }
     ]
   },

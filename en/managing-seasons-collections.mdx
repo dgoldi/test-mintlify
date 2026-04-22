@@ -1,0 +1,99 @@
+---
+title: 'Managing Seasons and Collections in the Admin App'
+description: 'You configure seasons, create collections, and link them to suppliers. These assignments simplify article creation and analytics reporting.'
+---
+
+{/* video:injected */}
+<video
+  controls
+  className="w-full aspect-video rounded-xl"
+  src="/videos/en/seasons-collections-flow.webm"
+></video>
+
+You configure seasons, create collections, and link them to suppliers. These assignments simplify article creation and analytics reporting.
+
+---
+
+## Prerequisites
+
+- Access to the **Admin App** with **Admin rights**
+- Permission for the **Settings** section
+
+---
+
+## 1. Configure seasons
+
+Seasons are created automatically by the system based on your configuration settings.
+
+1. Open the **Admin App**.
+2. Click **Settings** in the sidebar.
+3. Click **Seasons**.
+4. Click **Config Season**.
+
+![Seasons list with configuration button](/images/en/saisons-liste.png)
+
+5. Define:
+   - From which **year** seasons should be created automatically
+   - Which **month** starts the first semester
+   - **Short names** for both semesters
+   - How long seasons remain visible in the selection
+6. Click **Save**.
+
+The system creates new seasons automatically and hides expired ones.
+
+> **Note:** To remove the season from a label, open the season and enter a space in the **Print Text** field.
+
+---
+
+## 2. Create collections
+
+1. Click **Settings** in the sidebar.
+2. Click **Collections**.
+3. Click **Create Collection**.
+
+![Collections list with create button](/images/en/kollektionen-liste.png)
+
+4. Fill in the fields:
+
+| Field | Description |
+|-------|-------------|
+| **Name** | Name of the collection. |
+| **Print Text** | Text displayed on the label. |
+| **Start Month** | Start of the delivery period. |
+| **End Month** | End of the delivery period. |
+
+5. Click **Save**.
+
+---
+
+## 3. Link collection to supplier
+
+1. Open the desired collection.
+2. Switch to the **Suppliers** tab.
+3. Add the suppliers that deliver this collection.
+
+When creating articles and orders, the system automatically suggests the matching collection based on the supplier and delivery period.
+
+---
+
+## Season types
+
+The system distinguishes three season types:
+
+| Type | Description | Usage |
+|------|-------------|-------|
+| **Article Season** | The season assigned to an article. | Article management. Not recommended for Analytics filters. |
+| **Order Season** | The season assigned to an order. | Analytics reporting in the goods flow area. |
+| **Receiving Season** | Automatically assigned based on the delivery date. | Automatic assignment when no order exists. |
+
+> **Note:** For Analytics reporting, use the **Order Season** or **Receiving Season**, as the Article Season may be incomplete.
+
+---
+
+## Frequently asked questions
+
+**Are seasons created automatically?**
+Yes. The system creates seasons automatically based on your configuration.
+
+**Can I edit collections afterwards?**
+Yes. Open the collection and adjust the fields.

@@ -1,0 +1,101 @@
+---
+title: 'Artikel löschen und wiederherstellen in der Admin-App'
+description: 'Sie löschen einzelne Varianten oder ganze Artikel, stellen gelöschte Varianten wieder her und bereinigen doppelte Artikel.'
+---
+
+{/* video:injected */}
+<video
+  controls
+  className="w-full aspect-video rounded-xl"
+  src="/videos/de/article-delete-restore-flow.webm"
+></video>
+
+Sie löschen einzelne Varianten oder ganze Artikel, stellen gelöschte Varianten wieder her und bereinigen doppelte Artikel.
+
+---
+
+## Voraussetzungen
+
+- Zugang zur **Admin-App** mit **Admin-Rechten** (nicht mit Team-Account möglich)
+- Berechtigung für den Bereich **Artikel**
+
+---
+
+## 1. Varianten löschen
+
+Sie können einzelne Varianten eines Artikels deaktivieren, ohne den gesamten Artikel zu löschen.
+
+1. Öffnen Sie die **Admin-App**.
+2. Klicken Sie in der Seitenleiste auf **Artikel**.
+3. Öffnen Sie den gewünschten Artikel.
+4. Wechseln Sie zum Tab **Varianten**.
+5. Aktivieren Sie die **Checkboxen** neben den Varianten, die Sie löschen möchten.
+6. Klicken Sie auf **Löschen** in der Aktionsleiste.
+7. Bestätigen Sie die Löschung.
+
+![Variantenliste mit Auswahlmöglichkeit](/images/de/artikel-varianten-loeschen.png)
+
+Die gelöschten Varianten sind deaktiviert und nicht mehr im System sichtbar — sie können bei Bedarf wiederhergestellt werden.
+
+> **Hinweis:** Gelöschte Varianten bleiben in bestehenden Warenflüssen und Aufträgen erhalten.
+
+---
+
+## 2. Varianten wiederherstellen
+
+Gelöschte Varianten können Sie jederzeit reaktivieren.
+
+1. Öffnen Sie den Artikel und wechseln Sie zum Tab **Varianten**.
+2. Aktivieren Sie die Checkbox **Inaktive anzeigen**.
+
+Das System zeigt die deaktivierten Varianten in der Liste an.
+
+![Variantenliste mit inaktiven Varianten](/images/de/artikel-varianten-wiederherstellen.png)
+
+3. **Einzelne Variante:** Klicken Sie auf **Wiederherstellen** am Ende der Zeile.
+4. **Mehrere Varianten:** Aktivieren Sie die Checkboxen und klicken Sie auf **Wiederherstellen** in der Aktionsleiste.
+5. Bestätigen Sie die Wiederherstellung.
+
+---
+
+## 3. Ganzen Artikel löschen
+
+Um einen Artikel mit allen Varianten und Barcodes dauerhaft zu löschen:
+
+1. Öffnen Sie den Artikel.
+2. Wechseln Sie zum Tab **Erweitert**.
+3. Klicken Sie auf **Löschen**.
+
+![Artikel löschen auf dem Tab Erweitert](/images/de/artikel-loeschen-erweitert.png)
+
+4. Geben Sie die Anzahl der Varianten ein, um die Löschung zu bestätigen.
+5. Aktivieren Sie die Checkbox **Ich möchte alle dazugehörigen Varianten-Barcodes löschen**, um doppelte Barcodes zu vermeiden.
+6. Klicken Sie auf **Löschen**.
+
+> **Wichtig:** Dieser Vorgang kann nicht rückgängig gemacht werden. Aufträge und Warenflüsse mit diesen Varianten bleiben bestehen.
+
+---
+
+## 4. Doppelte Artikel bereinigen
+
+Wenn ein Artikel versehentlich doppelt erfasst wurde, bereinigen Sie die Duplikate in vier Schritten:
+
+1. **Duplikat finden** — Suchen Sie die doppelten Artikel in der Artikelliste.
+2. **Version wählen** — Prüfen Sie, welche Version behalten werden soll.
+3. **Lagerbestand umbuchen** — Entfernen Sie die Lagerbestände des falschen Artikels und buchen Sie sie auf den korrekten Artikel um.
+4. **Falschen Artikel deaktivieren** — Löschen Sie die Varianten des falschen Artikels (siehe Abschnitt 1) oder löschen Sie den ganzen Artikel (siehe Abschnitt 3).
+
+> **Hinweis:** Die Bestandsanpassung erfolgt über die Inventur-App oder die Admin-App. Stellen Sie sicher, dass der falsche Artikel keinen Lagerbestand mehr hat, bevor Sie ihn deaktivieren.
+
+---
+
+## Häufige Fragen
+
+**Kann ich gelöschte Varianten wiederherstellen?**
+Ja. Aktivieren Sie die Checkbox **Inaktive anzeigen** auf dem Tab **Varianten** und klicken Sie auf **Wiederherstellen**.
+
+**Kann ich einen ganzen Artikel wiederherstellen?**
+Nein. Ganze Artikel, die über den Tab **Erweitert** gelöscht wurden, können nicht wiederhergestellt werden. Nur einzelne Varianten sind wiederherstellbar.
+
+**Was passiert mit den Barcodes beim Löschen?**
+Barcodes werden nur gelöscht, wenn Sie die entsprechende Checkbox beim Löschen aktivieren. Ohne diese Option bleiben die Barcodes bestehen und können zu Duplikaten führen.

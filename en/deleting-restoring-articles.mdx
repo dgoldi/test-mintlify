@@ -1,0 +1,101 @@
+---
+title: 'Deleting and Restoring Articles in the Admin App'
+description: 'You delete individual variants or entire articles, restore deleted variants, and clean up duplicate articles.'
+---
+
+{/* video:injected */}
+<video
+  controls
+  className="w-full aspect-video rounded-xl"
+  src="/videos/en/article-delete-restore-flow.webm"
+></video>
+
+You delete individual variants or entire articles, restore deleted variants, and clean up duplicate articles.
+
+---
+
+## Prerequisites
+
+- Access to the **Admin App** with **Admin rights** (not possible with a Team Account)
+- Permission for the **Articles** section
+
+---
+
+## 1. Delete variants
+
+You can deactivate individual variants of an article without deleting the entire article.
+
+1. Open the **Admin App**.
+2. Click **Articles** in the sidebar.
+3. Open the desired article.
+4. Switch to the **Articles** tab.
+5. Enable the **checkboxes** next to the variants you want to delete.
+6. Click **Delete** in the action bar.
+7. Confirm the deletion.
+
+![Variant list with selection](/images/en/artikel-varianten-loeschen.png)
+
+The deleted variants are deactivated and no longer visible in the system — they can be restored if needed.
+
+> **Note:** Deleted variants remain in existing shipments and orders.
+
+---
+
+## 2. Restore variants
+
+You can reactivate deleted variants at any time.
+
+1. Open the article and switch to the **Articles** tab.
+2. Enable the **Show inactive** checkbox.
+
+The system shows the deactivated variants in the list.
+
+![Variant list with inactive variants](/images/en/artikel-varianten-wiederherstellen.png)
+
+3. **Single variant:** Click **Reactivate** at the end of the row.
+4. **Multiple variants:** Enable the checkboxes and click **Reactivate** in the action bar.
+5. Confirm the restoration.
+
+---
+
+## 3. Delete an entire article
+
+To permanently delete an article with all its variants and barcodes:
+
+1. Open the article.
+2. Switch to the **Advanced** tab.
+3. Click **Delete**.
+
+![Delete article on the Advanced tab](/images/en/artikel-loeschen-erweitert.png)
+
+4. Enter the number of variants to confirm the deletion.
+5. Enable the checkbox **I want to delete all related Article-Barcodes** to avoid duplicate barcodes.
+6. Click **Delete**.
+
+> **Important:** This action cannot be undone. Orders and shipments with these variants remain untouched.
+
+---
+
+## 4. Clean up duplicate articles
+
+If an article was accidentally created twice, clean up the duplicates in four steps:
+
+1. **Find the duplicate** — Search for the duplicate articles in the article list.
+2. **Choose the version** — Check which version should be kept.
+3. **Transfer stock** — Remove the stock from the incorrect article and transfer it to the correct one.
+4. **Deactivate the incorrect article** — Delete the variants of the incorrect article (see section 1) or delete the entire article (see section 3).
+
+> **Note:** Stock adjustments are made via the Stocktaking App or the Admin App. Make sure the incorrect article has no remaining stock before deactivating it.
+
+---
+
+## Frequently asked questions
+
+**Can I restore deleted variants?**
+Yes. Enable the **Show inactive** checkbox on the **Articles** tab and click **Reactivate**.
+
+**Can I restore an entire deleted article?**
+No. Entire articles deleted via the **Advanced** tab cannot be restored. Only individual variants can be reactivated.
+
+**What happens to the barcodes when deleting?**
+Barcodes are only deleted if you enable the corresponding checkbox during deletion. Without this option, barcodes remain and can cause duplicates.

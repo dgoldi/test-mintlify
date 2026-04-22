@@ -1,0 +1,123 @@
+---
+title: 'Bestehende Artikel in der Admin-App bearbeiten'
+description: 'Sie bearbeiten Preise, laden Bilder hoch und passen Artikeleigenschaften an — einzeln oder für mehrere Varianten gleichzeitig.'
+---
+
+{/* video:injected */}
+<video
+  controls
+  className="w-full aspect-video rounded-xl"
+  src="/videos/de/article-editing-flow.webm"
+></video>
+
+Sie bearbeiten Preise, laden Bilder hoch und passen Artikeleigenschaften an — einzeln oder für mehrere Varianten gleichzeitig.
+
+---
+
+## Voraussetzungen
+
+- Zugang zur **Admin-App**
+- Berechtigung für den Bereich **Artikel**
+- Mindestens ein Artikel mit Varianten ist im System vorhanden
+
+---
+
+## Übersicht
+
+Drei häufige Bearbeitungsvorgänge:
+
+1. **Preise ändern** — Sie passen Einkaufspreis, Verkaufspreis oder Original-Preis an.
+2. **Bilder hochladen** — Sie fügen Produktfotos zum Artikel hinzu.
+3. **Original-Preis eintragen** — Sie hinterlegen einen abweichenden Original-Preis, der durchgestrichen auf dem Etikett erscheint.
+
+---
+
+## 1. Preise ändern
+
+### Einzelne Variante bearbeiten
+
+1. Öffnen Sie die **Admin-App**.
+2. Klicken Sie in der Seitenleiste auf **Artikel**.
+3. Öffnen Sie den gewünschten Artikel.
+4. Wechseln Sie zum Tab **Varianten**.
+
+![Variantenliste mit Preisspalten](/images/de/artikel-varianten-liste.png)
+
+5. Klicken Sie am Ende der Zeile auf **Bearbeiten**.
+
+Das System öffnet ein Bearbeitungsfenster mit zwei Abschnitten: **Eigenschaften** und **Preise**.
+
+![Bearbeitungsfenster mit Preisfeldern](/images/de/artikel-bearbeiten-modal.png)
+
+6. Passen Sie die gewünschten Preisfelder an:
+
+| Feld | Beschreibung |
+|------|--------------|
+| **Einkaufspreis** | Preis, zu dem Sie den Artikel beim Lieferanten einkaufen. |
+| **Verkaufspreis** | Preis, den der Kunde bezahlt. |
+| **UVP entspricht VP** | Wenn aktiviert, übernimmt das System den Verkaufspreis als UVP. |
+| **UVP** | Unverbindliche Preisempfehlung. Nur sichtbar, wenn die Checkbox deaktiviert ist. |
+
+7. Klicken Sie auf **Speichern**.
+
+### Mehrere Varianten gleichzeitig bearbeiten
+
+1. Aktivieren Sie die **Checkboxen** links neben den gewünschten Varianten.
+2. Klicken Sie auf **Bearbeiten** in der Aktionsleiste oberhalb der Liste.
+3. Passen Sie die Preise an. Die Änderungen gelten für alle ausgewählten Varianten.
+4. Klicken Sie auf **Speichern**.
+
+> **Hinweis:** Bei der Sammelbearbeitung können Sie nur Preise ändern. Für Eigenschaftsänderungen (Farbe, Material, GTIN) bearbeiten Sie jede Variante einzeln.
+
+---
+
+## 2. Bilder hochladen
+
+1. Öffnen Sie den gewünschten Artikel.
+2. Wechseln Sie zum Tab **Übersicht**.
+3. Öffnen Sie den Abschnitt **Bilder**.
+
+![Übersicht-Tab mit Bilder-Abschnitt](/images/de/artikel-bilder-upload.png)
+
+4. Ziehen Sie ein Bild in den Upload-Bereich oder klicken Sie darauf, um eine Datei auszuwählen.
+5. Das System lädt das Bild hoch und zeigt es in der Übersicht an.
+
+> **Hinweis:** Sie können mehrere Bilder gleichzeitig hochladen. Über die Schaltfläche **Sortieren** ändern Sie die Reihenfolge der Bilder.
+
+---
+
+## 3. Original-Preis eintragen
+
+Wenn der Verkaufspreis von einem Original-Preis abweicht (z. B. bei Aktionen), erscheint der Original-Preis durchgestrichen auf dem Etikett.
+
+### Einzelne Variante
+
+1. Öffnen Sie den Artikel und wechseln Sie zum Tab **Varianten**.
+2. Klicken Sie am Ende der Zeile auf **Bearbeiten**.
+3. Deaktivieren Sie die Checkbox **VP entspricht Original-Preis**.
+4. Geben Sie den **Verkaufspreis** ein (Preis, den der Kunde bezahlt).
+5. Geben Sie den **Original-Preis** ein (wird durchgestrichen auf dem Etikett angezeigt).
+6. Klicken Sie auf **Speichern**.
+
+Das System berechnet den **Rabatt** automatisch in Prozent.
+
+### Mehrere Varianten gleichzeitig
+
+1. Aktivieren Sie die Checkboxen neben den gewünschten Varianten.
+2. Klicken Sie auf **Bearbeiten**.
+3. Deaktivieren Sie die Checkbox **VP entspricht Original-Preis**.
+4. Tragen Sie die Preise ein.
+5. Klicken Sie auf **Speichern**.
+
+---
+
+## Häufige Fragen
+
+**Kann ich den Preis für alle Varianten gleichzeitig ändern?**
+Ja. Aktivieren Sie die Checkboxen neben den gewünschten Varianten und klicken Sie auf **Bearbeiten**. Die Preisänderung gilt für alle ausgewählten Varianten.
+
+**Wo lade ich Bilder hoch?**
+Öffnen Sie den Artikel und wechseln Sie zum Tab **Übersicht**. Im Abschnitt **Bilder** können Sie Bilder per Drag-and-Drop oder über den Upload-Dialog hochladen.
+
+**Was ist der Unterschied zwischen Verkaufspreis und Original-Preis?**
+Der **Verkaufspreis** ist der aktuelle Preis, den der Kunde bezahlt. Der **Original-Preis** erscheint durchgestrichen auf dem Etikett und zeigt den früheren oder regulären Preis an.

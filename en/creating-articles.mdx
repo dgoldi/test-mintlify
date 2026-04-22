@@ -1,0 +1,190 @@
+---
+title: 'Creating Articles in the Admin App'
+description: 'You create a new article with color, size, and material variations in a single step. The system automatically generates all article variations from your entr...'
+---
+
+{/* video:injected */}
+<video
+  controls
+  className="w-full aspect-video rounded-xl"
+  src="/videos/en/article-creation-flow.webm"
+></video>
+
+You create a new article with color, size, and material variations in a single step. The system automatically generates all article variations from your entries.
+
+---
+
+## Prerequisites
+
+- Access to the **Admin App**
+- Permission for the **Articles** section
+- At least one **Brand**, one **Supplier**, and one **Category** exist in the system
+
+---
+
+## Overview
+
+The process in six steps:
+
+1. **Open the article form** — You navigate to the creation form.
+2. **Fill in model details** — You enter brand, supplier, article number, and category.
+3. **Assign season and collection** — You optionally assign the article to a season and collection.
+4. **Set prices** — You define purchase price, sales price, and MSRP.
+5. **Define variations** — You specify colors, sizes, and materials.
+6. **Save the article** — The system creates the article with all variations.
+
+For articles without variations, a simplified form is available — see the section [Creating a single article without variations](#creating-a-single-article-without-variations).
+
+---
+
+## 1. Open the article form
+
+1. Open the **Admin App**.
+2. Click **Articles** in the sidebar.
+3. Click **Add Article** in the top right corner.
+
+The system displays the creation form with the title **Article — create**.
+
+![Article list with Add Article button](/images/en/artikel-liste.png)
+
+> **Note:** If you want to carry over data from the last entry, click **Pre-fill from last entry**. The system fills all fields except the **Article Number** with the previously entered values. The button only appears if you have previously created an article.
+
+---
+
+## 2. Fill in model details
+
+The form is divided into two columns: On the left, you enter the model details, season/collection, and prices. On the right, you define the variations (colors, sizes, material).
+
+![Overview of the creation form](/images/en/artikel-formular.png)
+
+Fill in the following fields in the **Model Details** section:
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| **Brand** | Yes | Brand of the article. When you select a supplier, the system restricts the brand selection to that supplier's brands. |
+| **Supplier** | Yes | Supplier of the article. When you select a brand, the system restricts the supplier selection accordingly. |
+| **Article Number** | Yes | Name or number of the article. |
+| **Article Description** | No | Optional description of the article. |
+| **Category** | Yes | Category of the article. The system shows recommendations based on supplier and size system. |
+| **Assortment Group** | No | Optional assignment to an assortment group. |
+| **Tags** | No | Optional tags for labeling. |
+
+![Model details with filled fields](/images/en/artikel-angaben.png)
+
+> **Note:** **Brand** and **Supplier** filter each other. If only one matching entry exists, the system selects it automatically.
+
+---
+
+## 3. Assign season and collection
+
+In the **Season & Collection** section, you can optionally assign the article to a season and collection:
+
+1. Select a **Season** if needed.
+2. Select a **Collection** if needed. The system shows recommendations based on the selected supplier.
+
+Both fields are optional. If you do not need an assignment, skip this section.
+
+![Assigning season and collection](/images/en/artikel-saison.png)
+
+---
+
+## 4. Set prices
+
+Fill in the following fields in the **Price** section:
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| **Purchase Price** | Yes | Purchase price of the article. |
+| **Sales Price** | Yes | Sales price for the end customer. |
+
+### Setting the MSRP
+
+The checkbox **MSRP equals Sales Price** is enabled by default. The system uses the sales price as the manufacturer's suggested retail price (MSRP).
+
+If the MSRP differs from the sales price:
+
+1. Disable the checkbox **MSRP equals Sales Price**.
+2. Enter the desired **MSRP**.
+
+### Setting the original price
+
+If the sales price differs from an original price (e.g., for promotions):
+
+1. Disable the checkbox **Sales Price equals Original Price**.
+2. Enter the **Original Price**.
+
+The system calculates the **Discount** automatically as a percentage.
+
+![Prices with purchase and sales price](/images/en/artikel-preise.png)
+
+> **Note:** When you select a supplier, the system automatically uses that supplier's stored currency for the purchase price.
+
+---
+
+## 5. Define variations
+
+On the right side of the form, you define the article's variations. The system automatically creates all combinations of the specified colors, sizes, and materials.
+
+### Color Variations
+
+In the **Color Variations** section, enter the available colors. Confirm each entry individually. This field is optional — without a color entry, the system does not create color variations.
+
+### Size Dimension
+
+In the **Size Dimension** section, select a size system and the corresponding sizes. The system shows recommendations based on the selected supplier and category.
+
+> **Important:** The **Size Dimension** is a required field. Without a size specification, the article cannot be saved.
+
+### Material Variations
+
+In the **Material Variations** section, enter the material composition (e.g., "80% Cotton, 20% Polyester"). Confirm each entry individually. This field is optional.
+
+![Variation fields for colors, sizes, and material](/images/en/artikel-varianten.png)
+
+---
+
+## 6. Save the article
+
+1. Click **Save**.
+2. The system creates the article with all variation combinations and redirects you to the article overview.
+
+On the article overview, the following tabs are available: **Overview**, **Edit**, **Articles**, **Orders**, **Open Positions**, **Shipments**, **Batches**, and **Advanced**.
+
+![Article overview after successful creation](/images/en/artikel-uebersicht.png)
+
+> **Note:** On the **Articles** tab, you can add further variations afterwards — using the **Add Variations** button with the options **Add Color Set**, **Add Material Set**, or **Add Size Set**.
+
+---
+
+## Creating a single article without variations
+
+For articles without color, size, or material variations, a simplified form is available.
+
+1. Open the article form as described in step 1.
+2. Click **Add Single Article** in the top right corner.
+3. Fill in the **Model Details** (same fields as in the standard form, without season and collection).
+4. Set the **Prices** (same fields as in the standard form).
+5. Click **Save**.
+
+### Differences from the standard form
+
+| Property | Standard creation | Single article |
+|----------|------------------|----------------|
+| Color Variations | Yes | No |
+| Size Dimension | Yes (required) | No |
+| Material Variations | Yes | No |
+| Season & Collection | Yes | No |
+| Result | Article with variations | Single article without variations |
+
+---
+
+## Frequently asked questions
+
+**How many variations does the system create?**
+The system creates one variation for each combination of color, size, and material. Example: 3 colors, 4 sizes, and 2 materials result in 24 variations.
+
+**Can I add variations afterwards?**
+Yes. Open the article and switch to the **Articles** tab. Using **Add Variations**, you can add further colors, sizes, or materials.
+
+**Can I convert a single article into a variation article afterwards?**
+Yes. Open the article, switch to the **Articles** tab, and add colors, sizes, or materials there.

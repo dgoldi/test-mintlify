@@ -1,0 +1,95 @@
+---
+title: 'QR-Code für die Kundenregistrierung einrichten'
+description: 'Ihre Kunden können sich selbstständig über ein Online-Formular registrieren. Sie legen einmalig fest, welche Daten abgefragt werden, und teilen den generiert...'
+---
+
+{/* video:injected */}
+<video
+  controls
+  className="w-full aspect-video rounded-xl"
+  src="/videos/de/field-config-qr-code.webm"
+></video>
+
+Ihre Kunden können sich selbstständig über ein Online-Formular registrieren. Sie legen einmalig fest, welche Daten abgefragt werden, und teilen den generierten QR-Code — den Rest erledigt das System.
+
+---
+
+## Voraussetzungen
+
+- Zugang zur **Admin-App**
+- Berechtigung für den Bereich **Einstellungen**
+
+---
+
+## Übersicht
+
+Der Ablauf in drei Schritten:
+
+1. **Formular konfigurieren** — Sie legen fest, welche Felder der Kunde ausfüllt.
+2. **QR-Code teilen** — Sie drucken den QR-Code aus oder teilen ihn digital.
+3. **Kunde registriert sich** — Der Kunde scannt den QR-Code, füllt das Formular aus und erhält einen Registrierungscode.
+
+Wie Sie den Registrierungscode anschliessend im POS oder Office verarbeiten, erfahren Sie im Guide [Neukunden-Registrierung am POS abschliessen](neukunden-registrierung-pos.md).
+
+---
+
+## 1. Formular konfigurieren
+
+1. Öffnen Sie die **Admin-App**.
+2. Navigieren Sie zu **Einstellungen > Mehr > Digitale Neukunden-Erfassung**.
+
+Auf der linken Seite sehen Sie die Feldkonfiguration. Jedes Feld hat drei mögliche Zustände:
+
+| Symbol | Status | Bedeutung |
+|--------|--------|-----------|
+| **!** | Pflichtfeld | Der Kunde muss dieses Feld ausfüllen. |
+| **Auge** | Sichtbar | Das Feld wird angezeigt, ist aber optional. |
+| **Durchgestrichenes Auge** | Ausgeblendet | Das Formular zeigt dieses Feld nicht an. |
+
+![Feldkonfiguration mit drei Zuständen](/images/de/feldkonfiguration.png)
+
+3. Klicken Sie beim gewünschten Feld auf das entsprechende Symbol, um den Status zu wechseln.
+
+Standardmässig sind nur **Vorname** und **Nachname** als Pflichtfeld aktiv. Alle anderen Felder — darunter Geschlecht, Firma, Geburtsdatum, E-Mail, Telefon, Website und sämtliche Adressfelder — sind ausgeblendet. Aktivieren Sie gezielt die Felder, die Sie für Ihre Kundenerfassung benötigen.
+
+### AGB-URL hinterlegen (optional)
+
+Im Abschnitt **AGB** können Sie eine URL zu Ihren Geschäftsbedingungen hinterlegen. Das Registrierungsformular zeigt diese dem Kunden als Link an.
+
+> **Hinweis:** Die URL muss mit `https://` beginnen und einen gültigen Domainnamen enthalten (z. B. `https://www.meinshop.ch/agb`).
+
+---
+
+## 2. QR-Code teilen
+
+Auf der rechten Seite der Konfigurationsseite generiert das System automatisch einen **QR-Code**. Dieser leitet Kunden direkt zum Registrierungsformular weiter.
+
+![Generierter QR-Code](/images/de/qr-code.png)
+
+So können Sie den QR-Code einsetzen:
+
+- **Im Geschäft aufstellen** — Drucken Sie den QR-Code aus und platzieren Sie ihn an der Kasse oder im Eingangsbereich.
+- **Digital teilen** — Binden Sie den QR-Code in Newsletter, auf Ihrer Website oder in Social-Media-Posts ein.
+- **Am Kundenscreen anzeigen** — Zeigen Sie den QR-Code auf einem Bildschirm im Laden.
+
+> **Wichtig:** Der QR-Code enthält die Feldkonfiguration direkt in der URL. Wenn Sie die Felder ändern, aktualisiert sich der QR-Code auf der Konfigurationsseite automatisch. Bereits ausgedruckte oder geteilte QR-Codes behalten jedoch die alte Konfiguration — drucken Sie den QR-Code nach Änderungen erneut.
+
+---
+
+## 3. Kunde registriert sich
+
+Sobald ein Kunde den QR-Code scannt, öffnet sich das Registrierungsformular im Browser. Das Formular zeigt nur die Felder an, die Sie als **Pflichtfeld** oder **Sichtbar** konfiguriert haben.
+
+1. Der Kunde scannt den QR-Code mit dem Smartphone.
+2. Das Formular öffnet sich im Browser.
+3. Der Kunde füllt die Angaben aus und sendet das Formular ab.
+4. Das System erstellt einen **Registrierungscode** (Barcode), den der Kunde im Geschäft vorzeigen kann.
+
+Wie Ihr Team den Registrierungscode im POS oder Office verarbeitet, erfahren Sie im Guide [Neukunden-Registrierung am POS abschliessen](neukunden-registrierung-pos.md).
+
+---
+
+## Häufige Fragen
+
+**Kann ich die Felder nachträglich ändern?**
+Ja. Änderungen an der Feldkonfiguration wirken sich sofort auf neue Registrierungen aus. Drucken Sie den QR-Code nach Änderungen erneut, da bereits geteilte Codes die alte Konfiguration enthalten.

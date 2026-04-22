@@ -1,0 +1,101 @@
+---
+title: 'Schichten in der Admin-App einrichten'
+description: 'Sie erstellen neue Schichten mit Zahlungsarten, Beleg-Konfiguration und weisen sie einer Filiale zu.'
+---
+
+{/* video:injected */}
+<video
+  controls
+  className="w-full aspect-video rounded-xl"
+  src="/videos/de/shifts-setup-flow.webm"
+></video>
+
+Sie erstellen neue Schichten mit Zahlungsarten, Beleg-Konfiguration und weisen sie einer Filiale zu.
+
+---
+
+## Voraussetzungen
+
+- Zugang zur **Admin-App** mit **Admin-Rechten**
+- Mindestens eine **Filiale** ist im System vorhanden
+
+---
+
+## 1. Neue Schicht erstellen
+
+1. Öffnen Sie die **Admin-App**.
+2. Klicken Sie in der Seitenleiste auf **Einstellungen**.
+3. Klicken Sie auf **Schichten**.
+4. Klicken Sie auf **Schicht hinzufügen**.
+
+![Schichtenliste mit Schaltfläche Schicht hinzufügen](/images/de/schichten-liste.png)
+
+5. Füllen Sie die folgenden Felder aus:
+
+| Feld | Pflicht | Beschreibung |
+|------|---------|--------------|
+| **Name** | Ja | Interner Name der Schicht. |
+| **Offizieller Name** | Ja | Name auf Belegen und Dokumenten. |
+| **Filiale** | Ja | Zugehörige Filiale. |
+| **E-Mail** | Nein | Kontakt-E-Mail (wird auf Belegen gedruckt). |
+| **Telefon** | Nein | Kontakttelefon (wird auf Belegen gedruckt). |
+
+6. Klicken Sie auf **Speichern**.
+
+![Schicht-Formular mit Feldern](/images/de/schicht-formular.png)
+
+---
+
+## 2. Zahlungsarten konfigurieren
+
+Nach dem Erstellen der Schicht konfigurieren Sie die Zahlungsarten.
+
+1. Öffnen Sie die Schicht.
+2. Wechseln Sie zum Tab **Zahlungsmöglichkeiten**.
+3. Klicken Sie auf **Zahlungsart hinzufügen**.
+4. Wählen Sie den **Zahlungstyp** (z. B. Barzahlung, Kartenzahlung).
+5. Wählen Sie die **Währung**.
+6. Legen Sie fest, wann die Kasse gezählt werden soll (Eröffnung, Schliessung oder Nullstellung).
+7. Klicken Sie auf **Speichern**.
+
+Wiederholen Sie die Schritte für weitere Zahlungsarten.
+
+---
+
+## 3. Schicht-Berichte konfigurieren
+
+1. Öffnen Sie die Schicht.
+2. Aktivieren Sie die Checkbox **Schicht-Bericht aktiviert**.
+3. Wählen Sie die **Empfänger** für den automatischen Versand.
+4. Legen Sie fest, ob der Bericht **Details** enthalten soll.
+5. Klicken Sie auf **Speichern**.
+
+> **Hinweis:** Der Bericht wird automatisch per E-Mail an die gewählten Empfänger gesendet, sobald die Schicht geschlossen wird.
+
+### Bericht manuell herunterladen
+
+1. Öffnen Sie die Schicht.
+2. Klicken Sie oben rechts auf **Schicht-Bericht**.
+3. Wählen Sie den **Zeitraum** (maximal 7 Tage).
+4. Klicken Sie auf **Herunterladen**.
+
+---
+
+## 4. Zählungen nachdrucken
+
+1. Öffnen Sie **Einstellungen > Schichten**.
+2. Klicken Sie auf die gewünschte Schicht.
+3. Wechseln Sie zum Tab **Zählungen**.
+4. Klicken Sie auf das Drucker-Symbol neben der gewünschten Zählung.
+
+> **Hinweis:** Zählungsbelege können nicht per E-Mail versendet werden. Der Nachdruck erfolgt direkt am Terminal.
+
+---
+
+## Häufige Fragen
+
+**Kann ich die Zahlungsarten nachträglich ändern?**
+Ja. Öffnen Sie die Schicht und bearbeiten Sie die Zahlungsarten auf dem Tab **Zahlungsmöglichkeiten**.
+
+**Wie ändere ich die Auswahl-Dauer auf dem Beleg?**
+Öffnen Sie die Schicht und passen Sie die **Auswahl-Dauer in Tagen** sowie den **Text** an.
