@@ -13,6 +13,13 @@
       {
         "language": "en",
         "default": true,
+        "anchors": [
+          {
+            "anchor": "Download PDF",
+            "icon": "file-pdf",
+            "href": "/help-center-en.pdf"
+          }
+        ],
         "groups": [
           {
             "group": "Articles",
@@ -65,6 +72,13 @@
       },
       {
         "language": "de",
+        "anchors": [
+          {
+            "anchor": "PDF herunterladen",
+            "icon": "file-pdf",
+            "href": "/help-center-de.pdf"
+          }
+        ],
         "groups": [
           {
             "group": "Artikel",
