@@ -33,7 +33,8 @@
             "pages": [
               "en/creating-articles",
               "en/editing-articles",
-              "en/deleting-restoring-articles"
+              "en/deleting-restoring-articles",
+              "en/table"
             ]
           },
           {
